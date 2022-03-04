@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'db_helvethaica_x55_regular';
+  font-family: 'db_helvethaica';
   src: url("../fonts/db_helvethaica_x_v3.2.woff2") format("woff2"), url("../fonts/db_helvethaica_x_v3.2.woff") format("woff");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'db_helvethaica_x65_med';
+  font-family: 'db_helvethaica';
   src: url("../fonts/db_helvethaica_x_med_v3.2.woff2") format("woff2"), url("../fonts/db_helvethaica_x_med_v3.2.woff") format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal; }
 
 .header-wrapper .block-header__top {
@@ -37,7 +37,7 @@
     -ms-flex-align: center;
     align-items: center; }
     .header-wrapper .header__top .content-top__left .customer-type {
-      font-family: "db_helvethaica_x65_med";
+      font-family: "db_helvethaica";
       font-size: 1.875rem;
       line-height: 2.375rem;
       color: #969696;
@@ -70,7 +70,7 @@
         .header-wrapper .header__top .content-top__right .menu-top .list-menu li:last-of-type {
           margin-right: 20px; }
         .header-wrapper .header__top .content-top__right .menu-top .list-menu li .text-menu {
-          font-family: "db_helvethaica_x55_regular";
+          font-family: "db_helvethaica";
           font-size: 1.125rem;
           line-height: 1.625rem;
           color: #969696; }
@@ -99,7 +99,7 @@
         margin-right: 5px;
         border-right: 1px solid #FF7301; }
         .header-wrapper .header__top .content-top__right .lang ul .list-lang a {
-          font-family: "db_helvethaica_x65_med";
+          font-family: "db_helvethaica";
           font-size: 1.125rem;
           line-height: 1.625rem;
           color: #969696; }
@@ -138,17 +138,23 @@
       list-style: none;
       margin-right: 20px; }
       .header-wrapper .header__main .main-menu .list-menu li a {
-        font-family: "db_helvethaica_x65_med";
+        font-family: "db_helvethaica";
         font-size: 1.875rem;
         line-height: 2.375;
         color: #fff; }
       .header-wrapper .header__main .main-menu .list-menu li:last-child {
         margin-right: 0; }
 
-a {
-  text-decoration: none; }
+html, body {
+  scroll-behavior: smooth; }
 
-/* custom slick slide */
+body {
+  font-family: "db_helvethaica", sans-serif; }
+
+a {
+  text-decoration: none;
+  background-color: transparent; }
+
 .text-blue {
   color: #013CA6; }
 
@@ -185,9 +191,9 @@ a {
     width: 160px;
     color: #013CA6;
     display: none;
-    font-size: 22px;
+    font-family: "db_helvethaica";
+    font-size: 26px;
     line-height: 26px;
-    font-weight: 500;
     text-align: center;
     left: 50px;
     position: absolute;
@@ -198,9 +204,9 @@ a {
     background-color: rgba(150, 150, 150, 0.5); }
     .hero--wrapper .slides-numbers .active {
       color: #013CA6;
-      margin-right: -5px; }
+      margin-right: -4px; }
     .hero--wrapper .slides-numbers .total {
-      margin-left: -5px; }
+      margin-left: -3px; }
   .hero--wrapper .slick-arrow {
     font-size: 0;
     line-height: 0;
@@ -338,8 +344,7 @@ a {
     border: none;
     border-radius: 8px;
     background-color: #F1F1F1;
-    padding: 20px;
-    text-decoration: none; }
+    padding: 20px; }
     .service--wrapper .card--service .card__body {
       position: relative; }
     .service--wrapper .card--service .card__title {
