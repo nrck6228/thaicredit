@@ -118,7 +118,7 @@
     <div class="hero--wrapper homepage--benner wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
         <div class="slider__container">
             <div class="slides-numbers" style="display: block;">
-              <span class="active">01</span> / <span class="total"></span>
+              <span class="active">1</span> / <span class="total"></span>
             </div>
             <div class="slider-holder">
               <div class="item">
@@ -257,12 +257,6 @@
     <script src="js/wow.js"></script>
     
     <script>
-        var helpers = {
-            addZeros: function (n) {
-                return (n < 10) ? '0' + n : '' + n;
-            }
-        };
-
         function sliderInit() {
             var $slider = $('.slider-holder');
             $slider.each(function() {
@@ -293,11 +287,11 @@
                 }
 
                 $(this).on('afterChange', function(event, slick, currentSlide){
-                $sliderParent.find('.slides-numbers .active').html(helpers.addZeros(currentSlide + 1));
+                $sliderParent.find('.slides-numbers .active').html((currentSlide + 1));
                 });
 
                 var sliderItemsNum = $(this).find('.slick-slide').not('.slick-cloned').length;
-                $sliderParent.find('.slides-numbers .total').html(helpers.addZeros(sliderItemsNum));
+                $sliderParent.find('.slides-numbers .total').html((sliderItemsNum));
 
             });
         };

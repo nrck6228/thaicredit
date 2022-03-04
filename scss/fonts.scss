@@ -1,21 +1,20 @@
 
 @font-face {
-    font-family: 'db_helvethaica_x55_regular';
+    font-family: 'db_helvethaica';
     src: url('../fonts/db_helvethaica_x_v3.2.woff2') format('woff2'),
          url('../fonts/db_helvethaica_x_v3.2.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 
 }
 @font-face {
-    font-family: 'db_helvethaica_x65_med';
+    font-family: 'db_helvethaica';
     src: url('../fonts/db_helvethaica_x_med_v3.2.woff2') format('woff2'),
          url('../fonts/db_helvethaica_x_med_v3.2.woff') format('woff');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 
 }
 
 
-$font-regular: 'db_helvethaica_x55_regular';
-$font-med: 'db_helvethaica_x65_med';
+$font-regular: 'db_helvethaica';

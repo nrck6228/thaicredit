@@ -1,19 +1,28 @@
 @import './fonts';
 @import './layouts/header';
 
-a{
-    text-decoration: none;
-}
-
-/* custom slick slide */
-
 // variables
 $blue: #013CA6;
 $orange: #FF7301;
 
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-regular, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+// text color
 .text-blue{
     color: $blue;
 }
+
 
 .head--title{
     position: relative;
@@ -66,9 +75,9 @@ $orange: #FF7301;
         width: 160px;
         color: $blue;
         display: none;
-        font-size: 22px;
+        font-family: $font-regular;
+        font-size: 26px;
         line-height: 26px;
-        font-weight: 500;
         text-align: center;
         left: 50px;
         position: absolute;
@@ -81,11 +90,11 @@ $orange: #FF7301;
     
         .active {
             color: $blue;
-            margin-right: -5px;
+            margin-right: -4px;
         }
     
         .total {
-            margin-left: -5px;
+            margin-left: -3px;
         }
     }
     
@@ -258,7 +267,6 @@ $orange: #FF7301;
         background-color: #F1F1F1;
 
         padding: 20px;
-        text-decoration: none;
 
         .card__body{
             position: relative;
