@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.666" viewBox="0 0 20 12.666">
+  <g id="Icon" transform="translate(-1.5 12.166) rotate(180)" opacity="0.997">
+    <path id="Line" d="M18.667.5H0A.5.5,0,0,1-.5,0,.5.5,0,0,1,0-.5H18.667a.5.5,0,0,1,.5.5A.5.5,0,0,1,18.667.5Z" transform="translate(-21 5.833)" fill="#4c4c4c"/>
+    <path id="Path" d="M10,16.333a.5.5,0,0,1-.354-.854L15.126,10,9.646,4.521a.5.5,0,1,1,.707-.707l5.833,5.833a.5.5,0,0,1,0,.707l-5.833,5.833A.5.5,0,0,1,10,16.333Z" transform="translate(-17.833 -4.167)" fill="#4c4c4c"/>
+  </g>
+</svg>
