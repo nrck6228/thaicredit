@@ -6,7 +6,34 @@ a{
 }
 
 /* custom slick slide */
-.slider--wrapper{
+
+// variables
+$blue: #013CA6;
+$orange: #FF7301;
+
+.text-blue{
+    color: $blue;
+}
+
+.head--title{
+    position: relative;
+    margin-bottom: 40px;
+
+    h3{
+        margin-bottom: 30px;
+    }
+
+    &:after{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: $orange;
+    }
+}
+
+// custom slick slide
+.hero--wrapper{
      position: relative; 
 
     .slider__container {
@@ -15,25 +42,46 @@ a{
 
         .item {
             outline: none;
-            padding: 50px 0;
+            padding: 0;
             position: relative;
+
+            img {
+                width: 100%;
+                transition: all 3s ease;
+                transform: scale(1);
+            }
         }
-    }
-      
+
+        // .slick-active {
+        //     .item {
+        //         img {
+        //             transform: scale(1.1);
+        //         }
+        //     }
+            
+        // }
+    }  
       
     .slides-numbers {
-        color: #9fa5ac;
+        width: 160px;
+        color: $blue;
         display: none;
-        font-size: 20px;
-        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 500;
+        text-align: center;
         left: 50px;
         position: absolute;
-        top: -9px;
+        bottom: 25px;
+        z-index: 99;
+
+        padding: 5px 0;
+        border-radius: 8px;
+        background-color: rgba(150, 150, 150, 0.5);
     
         .active {
-            color: #6caddf;
-            font-size: 30px;
-            margin-right: -6px;
+            color: $blue;
+            margin-right: -5px;
         }
     
         .total {
@@ -42,27 +90,190 @@ a{
     }
     
     .slick-arrow {
+        font-size: 0;
+        line-height: 0;
         padding: 0;
         border: 0;
         outline: none;
         background: none;
-        background: #6caddf;
         position: absolute;
-        top: -9px;
+        bottom: 25px;
         padding: 10px;
-        border-radius: 10px;
-        z-index: 5;
         color: #fff;
         text-transform: lowercase;
         cursor: pointer;
     
+        z-index: 101;
         &.slick-next {
-            right: 0;
+            left: 160px;
+
+            &:before{
+                content: url('../images/static/icons/arrow-right.svg');
+            }
         }
     
         &.slick-prev {
-            right: 55px;
+            left: 60px;
+
+            &:before{
+                content: url('../images/static/icons/arrow-left.svg');
+            }
+        }
+
+        &.slick-disabled{
+            bottom: 31px;
+            &:before{
+                content: url('../images/static/icons/arrow-line.svg');
+            }
         }
     }      
 }
+.search--wrapper{
+    position: relative; 
+    margin-top: -35px;
+    margin-bottom: 40px;
 
+    .search__container{
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+        .form-control{
+            border: none;
+            &:focus{
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+        .btn--search{
+            display: block;
+            font-size: 0;
+            line-height: 0;
+            width: 38px;
+            height: 38px;
+            margin: auto;
+            border: none;
+            border-radius: 50%;
+            background-color: $orange;
+            transition: transform 0.4s ease;
+
+            &:before{
+                content: url('../images/static/icons/angle-right-white.svg');
+            }
+
+            &:hover{
+                background-color: $blue;
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.service--wrapper{
+    position: relative; 
+
+    .video--wrapper{
+
+        .image__box{
+            position: relative;
+            margin-bottom: 30px;
+            border-radius: 8px;
+
+            img{
+                width: 100%;
+            }
+
+            .btnPlay {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                z-index: 5;
+
+                img{
+                    width: 15px;
+                }
+            }
+        }
+
+        .content__box{
+            position: relative;
+
+            h3{
+                margin-bottom: 30px;
+            }
+        }
+
+        .btnPlay {
+            display: flex;
+            width: 48px;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            border-radius: 50%;
+            background: #FF7301;
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 2px solid white;
+            cursor: pointer;
+            box-shadow: 0 0 0 white;
+            transition: all 0.4s ease;
+            animation: btnPulse 2s infinite;
+
+            &:hover{
+                background-color: white;
+            }
+        }
+          
+          @-webkit-keyframes btnPulse {
+            0% {
+              -webkit-box-shadow: 0 0 0 0 white;
+            }
+            70% {
+              -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+            }
+            100% {
+              -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+          }
+          @keyframes btnPulse {
+            0% {
+              -moz-box-shadow: 0 0 0 0 white;
+              box-shadow: 0 0 0 0 white;
+            }
+            70% {
+              -moz-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+              box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+            }
+            100% {
+              -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+              box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+    }
+
+    .card--service{
+        border: none;
+        border-radius: 8px;
+        background-color: #F1F1F1;
+
+        padding: 20px;
+        text-decoration: none;
+
+        .card__body{
+            position: relative;
+        }
+
+        .card__title{
+            color: #4C4C4C;
+        }
+
+        .card__text{
+            color: #4C4C4C;
+        }
+
+        .card__figure{
+            text-align: right;
+        }
+    }
+}

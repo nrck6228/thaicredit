@@ -15,9 +15,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="css/style.css">
+    </noscript>
+    <link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/animate.css">
     </noscript>
     
     <title>ธนาคารไทยเครดิตเพื่อรายย่อย</title>
@@ -109,47 +115,147 @@
     
   </header>
 
-    <div class="slider--wrapper" style="display: none;">
+    <div class="hero--wrapper homepage--benner wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
         <div class="slider__container">
             <div class="slides-numbers" style="display: block;">
               <span class="active">01</span> / <span class="total"></span>
             </div>
             <div class="slider-holder">
               <div class="item">
-                <div class="media-wrap">
-                  <img src="http://via.placeholder.com/750x350" alt="">
-                </div>
+                <img src="images/static/main-slide/main-slide-1.jpg" alt="">
               </div>
               <div class="item">
-                <div class="media-wrap">
-                  <img src="http://via.placeholder.com/750x350" alt="">
-                </div>
-              </div>
-              <div class="item">
-                <div class="media-wrap">
-                  <img src="http://via.placeholder.com/750x350" alt="">
-                </div>
-              </div>
-              <div class="item">
-                <div class="media-wrap">
-                  <img src="http://via.placeholder.com/750x350" alt="">
-                </div>
-              </div>
-              <div class="item">
-                <div class="media-wrap">
-                  <img src="http://via.placeholder.com/750x350" alt="">
-                </div>
+                <img src="images/static/main-slide/main-slide-2.jpg" alt="">
               </div>
             </div>
         </div>
     </div>
 
+    <div class="search--wrapper homepage--search wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="search__container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-10">
+                              <input type="text" class="form-control" placeholder="Type Your Keyword">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary btn--search">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="service--wrapper homepage--service">
+        <div class="container">
+            <div class="head--title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                <h3 class="h2 text-blue btOrange">
+                    Service
+                </h3>
+            </div>
+
+            <div class="service__container">
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <div class="video--wrapper wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <div class="image__box">
+                                <img src="images/static/thumb-video.jpg">
+
+                                <a data-fancybox="" href="https://youtu.be/kYENrybYh0E?autoplay=1" class="btnPlay">
+                                    <img src="images/static/icons/btn-play-blue.svg">
+                                </a>
+                            </div>
+
+                            <div class="content__box">
+                                <h3>
+                                    Everyone Matters เราจะสู้และผ่านไปด้วยกัน
+                                </h3>
+                                <p>
+                                    ท่ามกลางวิกฤตโควิด-19 เราเห็นการต่อสู้และไม่ยอมแพ้ต่ออุปสรรคของคนมากมาย ‘
+ไม่ว่าจะเป็นพ่อค้าแม่ค้า หรือคนในชุมชน ธนาคารไทยเครดิต เพื่อรายย่อย ส่งความห่วงใย
+และความช่วยเหลือผู้ที่ได้รับผลกระทบจากวิกฤตดังกล่าวตลอดเวลาเกือบ 2 ปี
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-6">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                              <a href="#" class="card card--service">
+                                <div class="card__body">
+                                  <h3 class="card__title">
+                                    เงินฝากแบบฝากถอน ได้ไม่จำกัด                                    
+                                  </h3>
+                                  <p class="card__text">เงินฝาก</p>
+                                </div>
+                                <div class="card__figure">
+                                    <img src="images/static/service/demo-1.png">
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                                <a href="#" class="card card--service">
+                                  <div class="card__body">
+                                    <h3 class="card__title">
+                                        สินเชื่อเพื่อธุรกิจ 
+                                        Micro SME                                                                            
+                                    </h3>
+                                    <p class="card__text">สินเชื่อเงินกู้</p>
+                                  </div>
+                                  <div class="card__figure">
+                                      <img src="images/static/service/demo-2.png">
+                                  </div>
+                                </a>
+                            </div>
+
+                            <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                              <a href="#" class="card card--service">
+                                <div class="card__body">
+                                  <h3 class="card__title">
+                                    ขอวงเงินเพิ่ม                                 
+                                  </h3>
+                                  <p class="card__text">บริการอื่นๆ</p>
+                                </div>
+                                <div class="card__figure">
+                                    <img src="images/static/service/demo-3.png">
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                              <a href="#" class="card card--service">
+                                <div class="card__body">
+                                  <h3 class="card__title">
+                                    ยืดหยุดผ่อนชำระ                                    
+                                  </h3>
+                                  <p class="card__text">บริการอื่นๆ</p>
+                                </div>
+                                <div class="card__figure">
+                                    <img src="images/static/service/demo-4.png">
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Insert 3rd party -->
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="js/wow.js"></script>
+    
     <script>
         var helpers = {
             addZeros: function (n) {
@@ -158,48 +264,59 @@
         };
 
         function sliderInit() {
-        var $slider = $('.slider-holder');
-        $slider.each(function() {
-            var $sliderParent = $(this).parent();
-            $(this).slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: false,
-            infinite: true,
-            responsive: [
-                {
-                breakpoint: 767,
-                settings: {
-                    adaptiveHeight: true
+            var $slider = $('.slider-holder');
+            $slider.each(function() {
+                var $sliderParent = $(this).parent();
+                $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                speed: 3000,
+                // fade: true,
+                // cssEase: 'ease',
+                // touchThreshold: 100,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            adaptiveHeight: true
+                        }
+                    }
+                ]
+                });
+
+                if ($(this).find('.item').length > 1) {
+                $(this).siblings('.slides-numbers').show();
                 }
-                }
-            ]
+
+                $(this).on('afterChange', function(event, slick, currentSlide){
+                $sliderParent.find('.slides-numbers .active').html(helpers.addZeros(currentSlide + 1));
+                });
+
+                var sliderItemsNum = $(this).find('.slick-slide').not('.slick-cloned').length;
+                $sliderParent.find('.slides-numbers .total').html(helpers.addZeros(sliderItemsNum));
+
             });
-
-            if ($(this).find('.item').length > 1) {
-            $(this).siblings('.slides-numbers').show();
-            }
-
-            $(this).on('afterChange', function(event, slick, currentSlide){
-            $sliderParent.find('.slides-numbers .active').html(helpers.addZeros(currentSlide + 1));
-            });
-
-            var sliderItemsNum = $(this).find('.slick-slide').not('.slick-cloned').length;
-            $sliderParent.find('.slides-numbers .total').html(helpers.addZeros(sliderItemsNum));
-
-        });
-        
-        //   $('.slick-next').on('click', function () {
-        //     console.log('test');
-        //     $('.slider-holder').slick('slickGoTo', 5);
-        // });
         };
 
         sliderInit();
     </script>
 
-    
-
+    <script>
+        wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+        );
+        wow.init();
+    </script>
 </body>
 
 </html>
