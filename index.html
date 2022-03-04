@@ -10,12 +10,108 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- Slick Slide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
     
     <title>ธนาคารไทยเครดิตเพื่อรายย่อย</title>
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <div class="slider--wrapper">
+        <div class="slider__container">
+            <div class="slides-numbers" style="display: block;">
+              <span class="active">01</span> / <span class="total"></span>
+            </div>
+            <div class="slider-holder">
+              <div class="item">
+                <div class="media-wrap">
+                  <img src="http://via.placeholder.com/750x350" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="media-wrap">
+                  <img src="http://via.placeholder.com/750x350" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="media-wrap">
+                  <img src="http://via.placeholder.com/750x350" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="media-wrap">
+                  <img src="http://via.placeholder.com/750x350" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="media-wrap">
+                  <img src="http://via.placeholder.com/750x350" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insert 3rd party -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var helpers = {
+            addZeros: function (n) {
+                return (n < 10) ? '0' + n : '' + n;
+            }
+        };
+
+        function sliderInit() {
+        var $slider = $('.slider-holder');
+        $slider.each(function() {
+            var $sliderParent = $(this).parent();
+            $(this).slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            infinite: true,
+            responsive: [
+                {
+                breakpoint: 767,
+                settings: {
+                    adaptiveHeight: true
+                }
+                }
+            ]
+            });
+
+            if ($(this).find('.item').length > 1) {
+            $(this).siblings('.slides-numbers').show();
+            }
+
+            $(this).on('afterChange', function(event, slick, currentSlide){
+            $sliderParent.find('.slides-numbers .active').html(helpers.addZeros(currentSlide + 1));
+            });
+
+            var sliderItemsNum = $(this).find('.slick-slide').not('.slick-cloned').length;
+            $sliderParent.find('.slides-numbers .total').html(helpers.addZeros(sliderItemsNum));
+
+        });
+        
+        //   $('.slick-next').on('click', function () {
+        //     console.log('test');
+        //     $('.slider-holder').slick('slickGoTo', 5);
+        // });
+        };
+
+        sliderInit();
+    </script>
 </body>
 
 </html>
