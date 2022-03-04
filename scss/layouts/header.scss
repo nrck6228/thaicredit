@@ -1,0 +1,156 @@
+.header-wrapper{
+    .block-header{
+        &__top{
+            background-color: #002B79;
+            padding: 10px 0;
+        }
+        &__main{
+            background-color: #013CA6;
+        }
+    }
+    .header{
+        &__top{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .content-top{
+                &__left{
+                    display: flex;
+                    align-items: center;
+
+                    .customer-type{
+                        font-family: $font-med;
+                        font-size: 1.875rem;
+                        line-height: 2.375rem;
+                        color: #969696;
+                        cursor: pointer;
+                        &.show{
+                            color: #fff;
+                        }
+                        &:first-of-type{
+                            margin-right: 20px;
+                        }
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+                &__right{
+                    display: flex;
+                    align-items: center;
+                    .menu-top{
+                        .list-menu{
+                            margin: 0;
+                            padding: 0;
+
+                            display: flex;
+
+                            li{
+                                list-style: none;
+                                align-self: start;
+                                margin-right: 10px;
+                                &:last-of-type{
+                                    margin-right: 20px;
+                                }
+                                .text-menu{
+                                    font-family: $font-regular;
+                                    font-size: 1.125rem;
+                                    line-height: 1.625rem;
+                                    color: #969696;
+                                    &:hover{
+                                        color: #fff;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                    .map{
+                        margin-right: 20px;
+                        a{
+                            img{
+                                display: block;
+                            }
+                        }
+                    }
+                    .search-voice{
+                        margin-right: 20px;
+                        a{
+                            img{
+                                display: block;
+                            }
+                        }
+                    }
+                    .lang{
+                        ul{
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            .list-lang{
+                                list-style: none;
+                                padding-right: 5px;
+                                margin-right: 5px;
+                                border-right: 1px solid #FF7301;
+                                a{
+                                    font-family: $font-med;
+                                    font-size: 1.125rem;
+                                    line-height: 1.625rem;
+                                    color: #969696;
+                                }
+                                &.active{
+                                    a{
+                                        color: #fff;
+                                    }
+                                }
+                                &:last-child{
+                                    padding-right: 0;
+                                    margin-right: 0;
+                                    border-right: none;
+                                }
+                                &:hover{
+                                    a{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            .logo{
+                max-width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .main-menu{
+                .list-menu{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        list-style: none;
+                        margin-right: 20px;
+                        a{
+                            font-family: $font-med;
+                            font-size: 1.875rem;
+                            line-height: 2.375;
+                            color: #fff;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
