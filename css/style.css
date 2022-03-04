@@ -1,0 +1,42 @@
+/* custom slick slide */
+.slider--wrapper {
+  position: relative; }
+  .slider--wrapper .slider__container {
+    position: relative;
+    width: 100%; }
+    .slider--wrapper .slider__container .item {
+      outline: none;
+      padding: 50px 0;
+      position: relative; }
+  .slider--wrapper .slides-numbers {
+    color: #9fa5ac;
+    display: none;
+    font-size: 20px;
+    font-weight: 300;
+    left: 50px;
+    position: absolute;
+    top: -9px; }
+    .slider--wrapper .slides-numbers .active {
+      color: #6caddf;
+      font-size: 30px;
+      margin-right: -6px; }
+    .slider--wrapper .slides-numbers .total {
+      margin-left: -5px; }
+  .slider--wrapper .slick-arrow {
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    background: #6caddf;
+    position: absolute;
+    top: -9px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 5;
+    color: #fff;
+    text-transform: lowercase;
+    cursor: pointer; }
+    .slider--wrapper .slick-arrow.slick-next {
+      right: 0; }
+    .slider--wrapper .slick-arrow.slick-prev {
+      right: 55px; }

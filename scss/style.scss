@@ -1,0 +1,60 @@
+/* custom slick slide */
+.slider--wrapper{
+     position: relative; 
+
+    .slider__container {
+        position: relative;
+        width: 100%;
+
+        .item {
+            outline: none;
+            padding: 50px 0;
+            position: relative;
+        }
+    }
+      
+      
+    .slides-numbers {
+        color: #9fa5ac;
+        display: none;
+        font-size: 20px;
+        font-weight: 300;
+        left: 50px;
+        position: absolute;
+        top: -9px;
+    
+        .active {
+            color: #6caddf;
+            font-size: 30px;
+            margin-right: -6px;
+        }
+    
+        .total {
+            margin-left: -5px;
+        }
+    }
+    
+    .slick-arrow {
+        padding: 0;
+        border: 0;
+        outline: none;
+        background: none;
+        background: #6caddf;
+        position: absolute;
+        top: -9px;
+        padding: 10px;
+        border-radius: 10px;
+        z-index: 5;
+        color: #fff;
+        text-transform: lowercase;
+        cursor: pointer;
+    
+        &.slick-next {
+            right: 0;
+        }
+    
+        &.slick-prev {
+            right: 55px;
+        }
+    }      
+}
