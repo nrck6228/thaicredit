@@ -149,7 +149,9 @@ html, body {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "db_helvethaica", sans-serif; }
+  font-family: "db_helvethaica", sans-serif;
+  font-size: 1rem;
+  line-height: 100%; }
 
 a {
   text-decoration: none;
@@ -162,6 +164,7 @@ a {
   position: relative;
   margin-bottom: 40px; }
   .head--title h3 {
+    font-size: 2.25rem;
     margin-bottom: 30px; }
   .head--title:after {
     content: '';
@@ -274,7 +277,8 @@ a {
         transform: rotate(360deg); }
 
 .service--wrapper {
-  position: relative; }
+  position: relative;
+  margin-bottom: 30px; }
   .service--wrapper .video--wrapper .image__box {
     position: relative;
     margin-bottom: 30px;
@@ -291,6 +295,7 @@ a {
   .service--wrapper .video--wrapper .content__box {
     position: relative; }
     .service--wrapper .video--wrapper .content__box h3 {
+      font-size: 2.25rem;
       margin-bottom: 30px; }
   .service--wrapper .video--wrapper .btnPlay {
     display: -webkit-box;
@@ -344,12 +349,21 @@ a {
     border: none;
     border-radius: 8px;
     background-color: #F1F1F1;
-    padding: 20px; }
+    padding: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
     .service--wrapper .card--service .card__body {
       position: relative; }
     .service--wrapper .card--service .card__title {
+      font-size: 2.25rem;
       color: #4C4C4C; }
     .service--wrapper .card--service .card__text {
+      font-size: 1.25rem;
       color: #4C4C4C; }
     .service--wrapper .card--service .card__figure {
       text-align: right; }
+    .service--wrapper .card--service:hover {
+      background-color: white;
+      -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }

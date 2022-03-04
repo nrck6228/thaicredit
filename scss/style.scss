@@ -11,6 +11,8 @@ html, body {
 
 body {
     font-family: $font-regular, sans-serif;
+    font-size: 1rem;
+    line-height: 100%;
 }
 
 a{
@@ -29,6 +31,7 @@ a{
     margin-bottom: 40px;
 
     h3{
+        font-size: 2.25rem;
         margin-bottom: 30px;
     }
 
@@ -137,6 +140,7 @@ a{
         }
     }      
 }
+
 .search--wrapper{
     position: relative; 
     margin-top: -35px;
@@ -182,6 +186,7 @@ a{
 
 .service--wrapper{
     position: relative; 
+    margin-bottom: 30px;
 
     .video--wrapper{
 
@@ -210,6 +215,7 @@ a{
             position: relative;
 
             h3{
+                font-size: 2.25rem;
                 margin-bottom: 30px;
             }
         }
@@ -267,21 +273,29 @@ a{
         background-color: #F1F1F1;
 
         padding: 20px;
+        transition: all 0.4s ease-in-out;
 
         .card__body{
             position: relative;
         }
 
         .card__title{
+            font-size: 2.25rem;
             color: #4C4C4C;
         }
 
         .card__text{
+            font-size: 1.25rem;
             color: #4C4C4C;
         }
 
         .card__figure{
             text-align: right;
+        }
+
+        &:hover{
+            background-color: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
     }
 }
