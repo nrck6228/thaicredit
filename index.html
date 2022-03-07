@@ -140,138 +140,681 @@
     </div>
   </header>
 
-    <div class="hero--wrapper homepage--benner wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
-        <div class="slider__container">
-            <div class="slides-numbers" style="display: block;">
-              <span class="active">1</span> / <span class="total"></span>
+    <div class="home--wrapper">
+      <div class="hero--wrapper homepage--container wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
+        <div class="hero--container">
+            <div class="slider--numbers" style="display: block;">
+              <span class="active">01</span> / <span class="total"></span>
             </div>
-            <div class="slider-holder">
-              <div class="item">
-                <img src="images/static/main-slide/main-slide-1.jpg" alt="">
+            <div class="slider--holder">
+              <div class="slider__item">
+                <img class="slider__image" src="images/static/main-slide/main-slide-1.jpg" alt="">
               </div>
-              <div class="item">
-                <img src="images/static/main-slide/main-slide-2.jpg" alt="">
+              <div class="slider__item">
+                <img class="slider__image" src="images/static/main-slide/main-slide-2.jpg" alt="">
               </div>
             </div>
         </div>
-    </div>
+      </div>
 
-    <div class="search--wrapper homepage--search wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+
+      <div class="search--wrapper homepage--container wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-6">
+                      <div class="content--holder">
+                          <div class="row justify-content-center align-items-center">
+                              <div class="col-10">
+                                <input type="text" class="form-control" placeholder="Type Your Keyword">
+                              </div>
+                              <div class="col-auto">
+                                  <button type="submit" class="btn btn-primary btn--search">Submit</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="produt--wrapper homepage--container">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="search__container">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-10">
-                              <input type="text" class="form-control" placeholder="Type Your Keyword">
-                            </div>
-                            <div class="col-auto">
-                                <button type="submit" class="btn btn-primary btn--search">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="service--wrapper homepage--service">
-        <div class="container">
-            <div class="head--title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+          <div class="head--title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+            <div class="row justify-content-between">
+              <div class="col-auto">
                 <h3 class="h2 text-blue btOrange">
-                    Service
+                  แนะนำผลิตภัณฑ์
                 </h3>
+              </div>
+              <div class="col-auto">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-link product-link active" id="home-loan-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">สินเชื่อเงินกู้</a>
+                  <a class="nav-link product-link" id="home-deposit-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">เงินฝาก</a>
+                  <a class="nav-link product-link" id="home-other-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">บริการอื่นๆ</a>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="service__container">
-                <div class="row">
-                    <div class="col-12 col-xl-6">
-                        <div class="video--wrapper wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                            <div class="image__box">
-                                <img src="images/static/thumb-video.jpg">
-
-                                <a data-fancybox="" href="https://youtu.be/kYENrybYh0E?autoplay=1" class="btnPlay">
-                                    <img src="images/static/icons/btn-play-blue.svg">
-                                </a>
-                            </div>
-
-                            <div class="content__box">
-                                <h3>
-                                    Everyone Matters เราจะสู้และผ่านไปด้วยกัน
-                                </h3>
-                                <p>
-                                    ท่ามกลางวิกฤตโควิด-19 เราเห็นการต่อสู้และไม่ยอมแพ้ต่ออุปสรรคของคนมากมาย ‘
-ไม่ว่าจะเป็นพ่อค้าแม่ค้า หรือคนในชุมชน ธนาคารไทยเครดิต เพื่อรายย่อย ส่งความห่วงใย
-และความช่วยเหลือผู้ที่ได้รับผลกระทบจากวิกฤตดังกล่าวตลอดเวลาเกือบ 2 ปี
-                                </p>
-                            </div>
+          <div class="content--holder">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-loan-tab">
+                <div class="slider--loan">
+                  <div class="slider__item">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__image wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                          <img src="images/static/product/demo-1.jpg"> 
                         </div>
-                    </div>
+                      </div>
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__content wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                          <div class="title--box">
+                            <h3>
+                              สินเชื่อ SME กล้าให้เกิน 100 และ SME กล้าให้เต็ม MAX 
+                            </h3>
+                            <p>
+                              สินเชื่อธุรกิจเพื่อผู้ประกอบการรายย่อยแบบมีหลักทรัพย์ค้ำประกัน ขยายธุรกิจเป็นเงินทุนหมุนเวียน หรือเสริมสภาพคล่อง ค้ำประกันโดย บสย. 
+                            </p>
+                          </div>
 
-                    <div class="col-12 col-xl-6">
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
-                              <a href="#" class="card card--service">
-                                <div class="card__body">
-                                  <h3 class="card__title">
-                                    เงินฝากแบบฝากถอน ได้ไม่จำกัด                                    
-                                  </h3>
-                                  <p class="card__text">เงินฝาก</p>
+                          <div class="content--box">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-xl-4">
+                                <img class="icon__rate" src="images/static/product/icon-1.png"> 
+                              </div>
+                              <div class="col-12 col-xl-8">
+                                <div class="text__editor">
+                                  <ul>
+                                    <li>
+                                      SME กล้าให้เต็ม MAX สูงสุด 35 ล้านบาท
+                                    </li>
+                                    <li>
+                                      สินเชื่อ SME กล้าให้เกิน 100 สูงสุด 3 เท่า
+                                    </li>
+                                  </ul>
                                 </div>
-                                <div class="card__figure">
-                                    <img src="images/static/service/demo-1.png">
-                                </div>
-                              </a>
+                              </div>
                             </div>
+                          </div>
 
-                            <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
-                                <a href="#" class="card card--service">
+                          <div class="button--control">
+                            <a href="#" class="btn btn-primary btn--primary">ดูรายละเอียด</a>
+                            <a href="#" class="btn btn-primary btn--primary">ผลิตภัณฑ์ทั้งหมด</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__image wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                          <img src="images/static/product/demo-1.jpg"> 
+                        </div>
+                      </div>
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__content wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                          <div class="title--box">
+                            <h3>
+                              สินเชื่อ SME กล้าให้เกิน 100 และ SME กล้าให้เต็ม MAX 
+                            </h3>
+                            <p>
+                              สินเชื่อธุรกิจเพื่อผู้ประกอบการรายย่อยแบบมีหลักทรัพย์ค้ำประกัน ขยายธุรกิจเป็นเงินทุนหมุนเวียน หรือเสริมสภาพคล่อง ค้ำประกันโดย บสย. 
+                            </p>
+                          </div>
+
+                          <div class="content--box">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-xl-4">
+                                <img class="icon__rate" src="images/static/product/icon-1.png"> 
+                              </div>
+                              <div class="col-12 col-xl-8">
+                                <div class="text__editor">
+                                  <ul>
+                                    <li>
+                                      SME กล้าให้เต็ม MAX สูงสุด 35 ล้านบาท
+                                    </li>
+                                    <li>
+                                      สินเชื่อ SME กล้าให้เกิน 100 สูงสุด 3 เท่า
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="button--control">
+                            <a href="#" class="btn btn-primary btn--primary">ดูรายละเอียด</a>
+                            <a href="#" class="btn btn-primary btn--primary">ผลิตภัณฑ์ทั้งหมด</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="home-deposit-tab">
+                <div class="slider--loan">
+                  <div class="slider__item">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__image">
+                          <img src="images/static/product/demo-1.jpg"> 
+                        </div>
+                      </div>
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__content">
+                          <div class="title--box">
+                            <h3>
+                              สินเชื่อ SME กล้าให้เกิน 100 และ SME กล้าให้เต็ม MAX 2-1
+                            </h3>
+                            <p>
+                              สินเชื่อธุรกิจเพื่อผู้ประกอบการรายย่อยแบบมีหลักทรัพย์ค้ำประกัน ขยายธุรกิจเป็นเงินทุนหมุนเวียน หรือเสริมสภาพคล่อง ค้ำประกันโดย บสย. 
+                            </p>
+                          </div>
+
+                          <div class="content--box">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-xl-4">
+                                <img class="icon__rate" src="images/static/product/icon-1.png"> 
+                              </div>
+                              <div class="col-12 col-xl-8">
+                                <div class="text__editor">
+                                  <ul>
+                                    <li>
+                                      SME กล้าให้เต็ม MAX สูงสุด 35 ล้านบาท
+                                    </li>
+                                    <li>
+                                      สินเชื่อ SME กล้าให้เกิน 100 สูงสุด 3 เท่า
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="button--control">
+                            <a href="#" class="btn btn-primary btn--primary">ดูรายละเอียด</a>
+                            <a href="#" class="btn btn-primary btn--primary">ผลิตภัณฑ์ทั้งหมด</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__image">
+                          <img src="images/static/product/demo-1.jpg"> 
+                        </div>
+                      </div>
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__content">
+                          <div class="title--box">
+                            <h3>
+                              สินเชื่อ SME กล้าให้เกิน 100 และ SME กล้าให้เต็ม MAX 2-2
+                            </h3>
+                            <p>
+                              สินเชื่อธุรกิจเพื่อผู้ประกอบการรายย่อยแบบมีหลักทรัพย์ค้ำประกัน ขยายธุรกิจเป็นเงินทุนหมุนเวียน หรือเสริมสภาพคล่อง ค้ำประกันโดย บสย. 
+                            </p>
+                          </div>
+
+                          <div class="content--box">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-xl-4">
+                                <img class="icon__rate" src="images/static/product/icon-1.png"> 
+                              </div>
+                              <div class="col-12 col-xl-8">
+                                <div class="text__editor">
+                                  <ul>
+                                    <li>
+                                      SME กล้าให้เต็ม MAX สูงสุด 35 ล้านบาท
+                                    </li>
+                                    <li>
+                                      สินเชื่อ SME กล้าให้เกิน 100 สูงสุด 3 เท่า
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="button--control">
+                            <a href="#" class="btn btn-primary btn--primary">ดูรายละเอียด</a>
+                            <a href="#" class="btn btn-primary btn--primary">ผลิตภัณฑ์ทั้งหมด</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="home-other-tab">
+                <div class="slider--loan">
+                  <div class="slider__item">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__image">
+                          <img src="images/static/product/demo-1.jpg"> 
+                        </div>
+                      </div>
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__content">
+                          <div class="title--box">
+                            <h3>
+                              สินเชื่อ SME กล้าให้เกิน 100 และ SME กล้าให้เต็ม MAX 3-1
+                            </h3>
+                            <p>
+                              สินเชื่อธุรกิจเพื่อผู้ประกอบการรายย่อยแบบมีหลักทรัพย์ค้ำประกัน ขยายธุรกิจเป็นเงินทุนหมุนเวียน หรือเสริมสภาพคล่อง ค้ำประกันโดย บสย. 
+                            </p>
+                          </div>
+
+                          <div class="content--box">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-xl-4">
+                                <img class="icon__rate" src="images/static/product/icon-1.png"> 
+                              </div>
+                              <div class="col-12 col-xl-8">
+                                <div class="text__editor">
+                                  <ul>
+                                    <li>
+                                      SME กล้าให้เต็ม MAX สูงสุด 35 ล้านบาท
+                                    </li>
+                                    <li>
+                                      สินเชื่อ SME กล้าให้เกิน 100 สูงสุด 3 เท่า
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="button--control">
+                            <a href="#" class="btn btn-primary btn--primary">ดูรายละเอียด</a>
+                            <a href="#" class="btn btn-primary btn--primary">ผลิตภัณฑ์ทั้งหมด</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__image">
+                          <img src="images/static/product/demo-1.jpg"> 
+                        </div>
+                      </div>
+                      <div class="col-12 col-xl-6">
+                        <div class="slider__content">
+                          <div class="title--box">
+                            <h3>
+                              สินเชื่อ SME กล้าให้เกิน 100 และ SME กล้าให้เต็ม MAX 3-2
+                            </h3>
+                            <p>
+                              สินเชื่อธุรกิจเพื่อผู้ประกอบการรายย่อยแบบมีหลักทรัพย์ค้ำประกัน ขยายธุรกิจเป็นเงินทุนหมุนเวียน หรือเสริมสภาพคล่อง ค้ำประกันโดย บสย. 
+                            </p>
+                          </div>
+
+                          <div class="content--box">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-xl-4">
+                                <img class="icon__rate" src="images/static/product/icon-1.png"> 
+                              </div>
+                              <div class="col-12 col-xl-8">
+                                <div class="text__editor">
+                                  <ul>
+                                    <li>
+                                      SME กล้าให้เต็ม MAX สูงสุด 35 ล้านบาท
+                                    </li>
+                                    <li>
+                                      สินเชื่อ SME กล้าให้เกิน 100 สูงสุด 3 เท่า
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="button--control">
+                            <a href="#" class="btn btn-primary btn--primary">ดูรายละเอียด</a>
+                            <a href="#" class="btn btn-primary btn--primary">ผลิตภัณฑ์ทั้งหมด</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="service--wrapper homepage--container">
+          <div class="container">
+              <div class="head--title wow fadeInUp">
+                  <h3 class="h2 text-blue btOrange">
+                      Service
+                  </h3>
+              </div>
+
+              <div class="content--holder">
+                  <div class="row">
+                      <div class="col-12 col-xl-6">
+                          <div class="video--wrapper wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                              <a data-fancybox="" href="https://youtu.be/kYENrybYh0E?autoplay=1" class="image__box">
+                                  <img src="images/static/thumb-video.jpg">
+
+                                  <div class="btnPlay">
+                                      <img src="images/static/icons/btn-play-blue.svg">
+                                  </div>
+                              </a>
+
+                              <div class="content__box">
+                                  <h3>
+                                      Everyone Matters เราจะสู้และผ่านไปด้วยกัน
+                                  </h3>
+                                  <p>
+                                      ท่ามกลางวิกฤตโควิด-19 เราเห็นการต่อสู้และไม่ยอมแพ้ต่ออุปสรรคของคนมากมาย ‘
+  ไม่ว่าจะเป็นพ่อค้าแม่ค้า หรือคนในชุมชน ธนาคารไทยเครดิต เพื่อรายย่อย ส่งความห่วงใย
+  และความช่วยเหลือผู้ที่ได้รับผลกระทบจากวิกฤตดังกล่าวตลอดเวลาเกือบ 2 ปี
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-12 col-xl-6">
+                          <div class="row row-cols-1 row-cols-md-2 g-4">
+                              <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s"> 
+                                <a href="#" class="card card--service" onmouseover="openModal1(true)" onmouseleave="openModal1(false)">
                                   <div class="card__body">
                                     <h3 class="card__title">
-                                        สินเชื่อเพื่อธุรกิจ 
-                                        Micro SME                                                                            
+                                      เงินฝากแบบฝากถอน ได้ไม่จำกัด                                 
                                     </h3>
-                                    <p class="card__text">สินเชื่อเงินกู้</p>
+                                    <p class="card__text">เงินฝาก</p>
                                   </div>
                                   <div class="card__figure">
-                                      <img src="images/static/service/demo-2.png">
+                                      <img src="images/static/service/demo-1.png">
+                                  </div>
+
+                                  <!-- Tooltips -->
+                                  <div class="modal--tooltip tooltip-one">
+                                      <div class="content__tooltip">
+                                          <div class="text">Product Guide System</div>
+                                      </div>
                                   </div>
                                 </a>
-                            </div>
+                              </div>
 
-                            <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
-                              <a href="#" class="card card--service">
-                                <div class="card__body">
-                                  <h3 class="card__title">
-                                    ขอวงเงินเพิ่ม                                 
-                                  </h3>
-                                  <p class="card__text">บริการอื่นๆ</p>
-                                </div>
-                                <div class="card__figure">
-                                    <img src="images/static/service/demo-3.png">
-                                </div>
-                              </a>
-                            </div>
+                              <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                                  <a href="#" class="card card--service" onmouseover="openModal2(true)" onmouseleave="openModal2(false)">
+                                    <div class="card__body">
+                                      <h3 class="card__title">
+                                          สินเชื่อเพื่อธุรกิจ 
+                                          Micro SME                                                                            
+                                      </h3>
+                                      <p class="card__text">สินเชื่อเงินกู้</p>
+                                    </div>
+                                    <div class="card__figure">
+                                        <img src="images/static/service/demo-2.png">
+                                    </div>
 
-                            <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
-                              <a href="#" class="card card--service">
-                                <div class="card__body">
-                                  <h3 class="card__title">
-                                    ยืดหยุดผ่อนชำระ                                    
-                                  </h3>
-                                  <p class="card__text">บริการอื่นๆ</p>
-                                </div>
-                                <div class="card__figure">
-                                    <img src="images/static/service/demo-4.png">
-                                </div>
-                              </a>
-                            </div>
-                        </div>
+                                    <!-- Tooltips -->
+                                    <div class="modal--tooltip tooltip-two">
+                                      <div class="content__tooltip">
+                                          <div class="text">Product Guide System 2</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                              </div>
+
+                              <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                                <a href="#" class="card card--service" onmouseover="openModal3(true)" onmouseleave="openModal3(false)">
+                                  <div class="card__body">
+                                    <h3 class="card__title">
+                                      ขอวงเงินเพิ่ม                                 
+                                    </h3>
+                                    <p class="card__text">บริการอื่นๆ</p>
+                                  </div>
+                                  <div class="card__figure">
+                                      <img src="images/static/service/demo-3.png">
+                                  </div>
+
+                                  <!-- Tooltips -->
+                                  <div class="modal--tooltip tooltip-three">
+                                    <div class="content__tooltip">
+                                        <div class="text">Product Guide System 3</div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                                <a href="#" class="card card--service" onmouseover="openModal4(true)" onmouseleave="openModal4(false)">
+                                  <div class="card__body">
+                                    <h3 class="card__title">
+                                      ยืดหยุดผ่อนชำระ                                    
+                                    </h3>
+                                    <p class="card__text">บริการอื่นๆ</p>
+                                  </div>
+                                  <div class="card__figure">
+                                      <img src="images/static/service/demo-4.png">
+                                  </div>
+
+                                  <!-- Tooltips -->
+                                  <div class="modal--tooltip tooltip-four">
+                                    <div class="content__tooltip">
+                                        <div class="text">Product Guide System 4</div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      
+      <div class="news--wrapper homepage--container">
+        <div class="container">
+          <div class="head--title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+            <h3 class="h2 text-blue btOrange">
+                What’s New
+            </h3>
+          </div>
+
+          <div class="content--holder">
+            <div class="row">
+              <div class="col-12 col-xl-4">
+                <div class="article--rate wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-loan-tab" data-bs-toggle="tab" data-bs-target="#nav-loan" type="button" role="tab" aria-controls="nav-loan" aria-selected="true">อัตราดอกเบี้ยเงินกู้</button>
+                    <button class="nav-link" id="nav-deposit-tab" data-bs-toggle="tab" data-bs-target="#nav-deposit" type="button" role="tab" aria-controls="nav-deposit" aria-selected="false">อัตราดอกเบี้ยเงินฝาก</button>
+                  </div>
+
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-loan" role="tabpanel" aria-labelledby="nav-loan-tab">
+                      <div class="table-responsive">
+                        <table class="table table--increase">
+                          <tbody>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
+                    <div class="tab-pane fade" id="nav-deposit" role="tabpanel" aria-labelledby="nav-deposit-tab">
+                      <div class="table-responsive">
+                        <table class="table table--increase">
+                          <tbody>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>
+                                <span>
+                                  MLR
+                                </span>
+                              </th>
+                              <td>
+                                8.10 %
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
+              </div>
+              
+              <div class="col-12 col-xl-8">
+                <div class="article--news wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                  <div class="slider--news">
+                    <a href="#" class="slider__item">
+                      <div class="slider__image" style="background-image: url('images/static/news-slide/news-slide-1.jpg');">
+                      </div>
+
+                      <div class="button--control">
+                        <button class="btn btn-primary btn--outline">โปรโมชั่น</button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-xl-4">
+                <div class="article--info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                  <a href="#" class="card--holder">
+                    <div class="card__image" style="background-image: url('images/static/info/demo-1.jpg');"></div>
+                    <div class="button--control">
+                      <button class="btn btn-primary btn--outline">สาขา</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-12 col-xl-4">
+                <div class="article--info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                  <a href="#" class="card--holder">
+                    <div class="card__image" style="background-image: url('images/static/info/demo-2.jpg');"></div>
+                    <div class="button--control">
+                      <button class="btn btn-primary btn--outline">ข่าวสารธนาคาร</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-12 col-xl-4">
+                <div class="article--info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                  <a href="#" class="card--holder">
+                    <div class="card__image" style="background-image: url('images/static/info/demo-3.jpg');"></div>
+                    <div class="button--control">
+                      <button class="btn btn-primary btn--outline">สาระน่ารู้</button>
+                    </div>
+                    
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+
     </div>
 
     <footer>
@@ -419,8 +962,14 @@
     <script src="js/wow.js"></script>
     
     <script>
+        var helpers = {
+            addZeros: function (n) {
+                return (n < 10) ? '0' + n : '' + n;
+            }
+        };
+
         function sliderInit() {
-            var $slider = $('.slider-holder');
+            var $slider = $('.slider--holder');
             $slider.each(function() {
                 var $sliderParent = $(this).parent();
                 $(this).slick({
@@ -430,7 +979,7 @@
                 infinite: true,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                speed: 3000,
+                speed: 1500,
                 // fade: true,
                 // cssEase: 'ease',
                 // touchThreshold: 100,
@@ -445,20 +994,67 @@
                 });
 
                 if ($(this).find('.item').length > 1) {
-                $(this).siblings('.slides-numbers').show();
+                $(this).siblings('.slider--numbers').show();
                 }
 
                 $(this).on('afterChange', function(event, slick, currentSlide){
-                $sliderParent.find('.slides-numbers .active').html((currentSlide + 1));
+                $sliderParent.find('.slider--numbers .active').html(helpers.addZeros(currentSlide + 1));
                 });
 
                 var sliderItemsNum = $(this).find('.slick-slide').not('.slick-cloned').length;
-                $sliderParent.find('.slides-numbers .total').html((sliderItemsNum));
+                $sliderParent.find('.slider--numbers .total').html(helpers.addZeros(sliderItemsNum));
 
             });
         };
 
         sliderInit();
+
+        // function slickInit() {
+        //   $(".slider--loan").slick({
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     dots: true,
+        //     infinite: true,
+        //     autoplay: false,
+        //     speed: 1500,
+        //   });
+        // }
+        
+        // slickInit();
+
+        // $('button[data-toggle="tab"]').on("shown.bs.tab", function(e) {
+        //   $(".slider--loan").slick("unslick");
+        //   slickInit();
+        // });
+
+        //News Slider
+        $('.slider--news').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1500,
+          arrows: false,
+        });
+    </script>
+
+    <script>
+        $(".slider--loan").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: true,
+          autoplay: false,
+          speed: 1500,
+        });
+
+        $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function(e) {
+            e.target
+            e.relatedTarget
+            $('.slider--loan').slick('setPosition', 0);
+        });
     </script>
 
     <script>
@@ -497,7 +1093,35 @@
           });
       });
     </script>
+    <script>
+        const openModal1 = (isOpen)=>{
+        const elModal1 = document.querySelector('.tooltip-one')
+        if (isOpen) elModal1.classList.add('open')
+        else elModal1.classList.remove('open')
+        
+        }
 
+        const openModal2 = (isOpen)=>{
+        const elModal2 = document.querySelector('.tooltip-two')
+        if (isOpen) elModal2.classList.add('open')
+        else elModal2.classList.remove('open')
+        
+        }
+
+        const openModal3 = (isOpen)=>{
+        const elModal3 = document.querySelector('.tooltip-three')
+        if (isOpen) elModal3.classList.add('open')
+        else elModal3.classList.remove('open')
+        
+        }
+
+        const openModal4 = (isOpen)=>{
+        const elModal4 = document.querySelector('.tooltip-four')
+        if (isOpen) elModal4.classList.add('open')
+        else elModal4.classList.remove('open')
+        
+        }
+    </script>
 </body>
 
 </html>
