@@ -1,5 +1,6 @@
 @import './fonts';
 @import './layouts/header';
+@import './layouts/footer';
 
 // variables
 $blue: #013CA6;
@@ -79,6 +80,9 @@ a{
         width: 40px;
         height: 2px;
         background-color: $orange;
+    }
+    &__footer{
+        margin-top: 39px;
     }
 }
 

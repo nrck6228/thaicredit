@@ -1,0 +1,129 @@
+.footer-wrapper{
+    border-top: 1px solid #013CA6;
+    padding: 30px 0 0;
+    position: relative;
+    .block-footer{
+        &__main{
+            margin-bottom: 30px;
+            .desc--editor{
+                font-size: 1.125rem;
+                line-height: 1.625rem;
+                color: #969696;
+                margin-bottom: 30px;
+            }
+            .link-widget-footer{
+                .item{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 115px;
+                    position: relative;
+                    border-radius: 16px;
+                    .link-widget{
+                        position: absolute;
+                        bottom: 15px;
+                        left: 0;
+                        right: 0;
+                        display: block;
+                        text-transform: uppercase;
+                        font-size: 1.125rem;
+                        line-height: 1.625rem;
+                        color: #013CA6;
+                        background-color: #fff;
+                        border-radius: 16px;
+                        padding: 5px 10px;
+                        text-align: center;
+                        width: 100%;
+                        max-width: 125px;
+                        margin: auto;
+                        transition: all 0.25s ease;
+                        &:hover{
+                            background-color: #013CA6;
+                            color: #fff;
+                            transition: all 0.25s ease;
+                        }
+                    }
+                }
+            }
+            .link-footer{
+                ul{
+                    margin: 0;
+                    padding: 0;
+
+                    column-count: 2;
+                    li{
+                        list-style: none;
+                        border-bottom: 1px solid #F1F1F1;
+                        break-inside: avoid-column;
+                        padding-bottom: 10px;
+                        margin-bottom: 10px;
+                        a{
+                            display: block;
+                            font-size: 1.125rem;
+                            line-height: 1.625rem;
+                            color: #4C4C4C;
+                            &:hover{
+                                color: #013CA6;
+                            }
+                        }
+                    }
+                }
+            }
+            .link-icon-footer{
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        margin-bottom: 15px;
+                        a{
+                            display: block;
+                            .icon-link-contact{
+                                display: flex;
+                                align-items: center;
+                                .icon-contact{
+                                    width: 34px;
+                                    height: 34px;
+                                    margin-right: 10px;
+                                }
+                                .text-contact{
+                                    font-size: 1.125rem;
+                                    line-height: 1.625rem;
+                                    color: #969696;
+                                }
+                            }
+                            &:hover{
+                                .icon-link-contact{
+                                    .text-contact{
+                                        color: #013CA6;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &__copyright{
+            background-color: #013CA6;
+            font-size: 1.125rem;
+            line-height: 1.625rem;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
+        }
+    }
+
+    .gototop{
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        cursor: pointer;
+    }
+}

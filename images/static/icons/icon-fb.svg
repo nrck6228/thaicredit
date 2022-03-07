@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Phone" transform="translate(-165 -3604)">
+    <rect id="Area" width="34" height="34" rx="17" transform="translate(165 3604)" fill="#f1f1f1"/>
+    <g id="Icon" transform="translate(174 3613)">
+      <rect id="Area-2" data-name="Area" width="16" height="16" rx="2" transform="translate(0 0)" fill="#013ca6"/>
+      <g id="Icon-2" data-name="Icon" transform="translate(4.805 1.611)">
+        <path id="Path" d="M13.736,1.917H11.819A3.2,3.2,0,0,0,8.625,5.111V7.028H6.708V9.584H8.625v5.111h2.556V9.584H13.1l.639-2.556H11.181V5.111a.639.639,0,0,1,.639-.639h1.917Z" transform="translate(-6.708 -1.917)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

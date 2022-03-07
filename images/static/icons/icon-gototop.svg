@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_2201" data-name="Group 2201" transform="translate(-3696 -8001)">
+    <g id="Group_2158" data-name="Group 2158" transform="translate(4874 6733) rotate(90)">
+      <path id="Path_3228" data-name="Path 3228" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0Z" transform="translate(1268 1118)" fill="#f1f1f1"/>
+      <g id="Icon" transform="translate(1284.332 1162.877) rotate(-90)">
+        <line id="Line" y1="24.267" transform="translate(15.01 1.668)" fill="none" stroke="#163ba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path" d="M4.167,15.722,16.3,4.167,28.433,15.722" transform="translate(-1.29 -2.499)" fill="none" stroke="#163ba0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
