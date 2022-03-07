@@ -6,6 +6,10 @@
         }
         &__main{
             background-color: #013CA6;
+            display: none;
+            &.show{
+                display: block;
+            }
         }
     }
     .header{
@@ -25,8 +29,26 @@
                         line-height: 2.375rem;
                         color: #969696;
                         cursor: pointer;
+                        position: relative;
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            bottom: -10px;
+                            right: 0;
+                            left: 0;
+                            margin: auto;
+                            width: 0;
+                            height: 0;
+                            border-width: 0 8.5px 8px 8.5px;
+                            border-color: transparent transparent #013CA6 transparent;
+                            border-style: solid;
+                            opacity: 0;
+                        }
                         &.show{
                             color: #fff;
+                            &:after{
+                                opacity: 1;
+                            }
                         }
                         &:first-of-type{
                             margin-right: 20px;
