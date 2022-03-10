@@ -40,7 +40,7 @@ a{
     height: 46px;
     padding: 0 30px;
     display: flex;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 25px;
     border-radius: 8px;
     justify-content: center;
@@ -205,7 +205,7 @@ a{
 
         .form-control{
             border: none;
-            font-size: 22px;
+            font-size: 1.375rem;
             line-height: 26px;
             &:focus{
                 outline: 0;
@@ -256,7 +256,7 @@ a{
             padding: 1rem;
             margin-bottom: 0;
             font-weight: 500;
-            font-size: 22px;
+            font-size: 1.375rem;
             color: #969696;
             border: none;
             border-radius: 0;
@@ -382,14 +382,25 @@ a{
 
         .title--box{
             margin-bottom: 40px;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+
+            h3{
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+            }
         }
 
         .content--box{
             margin-bottom: 40px;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
 
             .icon__rate{
                 max-width: 100%;
@@ -459,10 +470,18 @@ a{
 
         .content__box{
             position: relative;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
 
             h3{
                 font-size: 2.25rem;
+                line-height: 2.5rem;
                 margin-bottom: 30px;
+            }
+
+            p{
+                font-size: 1.125rem;
+                line-height: 1.5rem;
             }
         }
 
@@ -528,11 +547,13 @@ a{
 
         .card__title{
             font-size: 2.25rem;
+            line-height: 2.5rem;
             color: #4C4C4C;
         }
 
         .card__text{
             font-size: 1.25rem;
+            line-height: 1.5rem;
             color: #4C4C4C;
         }
 
@@ -622,9 +643,23 @@ a{
     //background-color: white;
 
     .article--rate{
+        position: relative;
         height: 355px;
         border-radius: 8px;
         background-color: #F1F1F1;
+
+        p.last--update{
+            position: absolute;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            font-size: 1.125rem;
+            font-weight: 300;
+            padding: 1rem;
+            margin: 0;
+            color: rgb(118, 118, 118);
+        }
 
         .nav-tabs{
             border-bottom: none;
@@ -637,7 +672,7 @@ a{
                 padding: 1rem;
                 margin-bottom: 0;
                 font-weight: 500;
-                font-size: 22px;
+                font-size: 1.375rem;
                 color: #969696;
                 border: none;
                 border-radius: 0;
@@ -674,8 +709,8 @@ a{
         .table--increase{
             &>:not(caption)>*>*{
                 font-weight: 300;
-                font-size: 22px;
-                line-height: 36px;
+                font-size: 1.375rem;
+                line-height: 30px;
                 color: #4C4C4C;
                 border-bottom-color: white;
             }
@@ -689,7 +724,7 @@ a{
 
             td{
                 font-weight: 500;
-                font-size: 36px;
+                font-size: 30px;
                 color: $blue;
                 text-align: right;
             }
@@ -720,6 +755,10 @@ a{
                     bottom: 10px;
                     left: 10px;
                     z-index: 2;
+
+                    .btn{
+                        height: 34px;
+                    }
                 }
     
                 &:hover{
@@ -821,6 +860,10 @@ a{
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 2;
+
+                .btn{
+                    height: 34px;
+                }
             }
 
             &:hover{
