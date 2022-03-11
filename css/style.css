@@ -705,9 +705,9 @@ a {
     font-size: 26px;
     line-height: 26px;
     text-align: center;
-    left: 50px;
+    left: 15px;
     position: absolute;
-    bottom: 25px;
+    bottom: 15px;
     z-index: 99;
     padding: 5px 0;
     border-radius: 8px;
@@ -725,22 +725,22 @@ a {
     outline: none;
     background: none;
     position: absolute;
-    bottom: 25px;
+    bottom: 17.5px;
     padding: 10px;
     color: #fff;
     text-transform: lowercase;
     cursor: pointer;
     z-index: 101; }
     .hero--wrapper .slick-arrow.slick-next {
-      left: 160px; }
+      left: 125px; }
       .hero--wrapper .slick-arrow.slick-next:before {
         content: url("../images/static/icons/arrow-right.svg"); }
     .hero--wrapper .slick-arrow.slick-prev {
-      left: 60px; }
+      left: 25px; }
       .hero--wrapper .slick-arrow.slick-prev:before {
         content: url("../images/static/icons/arrow-left.svg"); }
     .hero--wrapper .slick-arrow.slick-disabled {
-      bottom: 31px; }
+      bottom: 16px; }
       .hero--wrapper .slick-arrow.slick-disabled:before {
         content: url("../images/static/icons/arrow-line.svg"); }
 
