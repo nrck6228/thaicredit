@@ -1030,6 +1030,7 @@ a {
     border: none;
     border-radius: 8px;
     background-color: #F1F1F1;
+    height: 100%;
     padding: 20px;
     -webkit-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
