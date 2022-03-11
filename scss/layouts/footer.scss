@@ -157,6 +157,7 @@ $orange: #FF7301;
                 }
             }
         }
+
         &__copyright{
             background-color: #013CA6;
             font-size: 1.125rem;
@@ -165,6 +166,10 @@ $orange: #FF7301;
             color: #fff;
             text-align: center;
             padding: 15px 10px;
+        }
+
+        .article--info{
+            margin-bottom: 20px;
         }
     }
 
