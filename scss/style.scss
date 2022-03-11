@@ -241,6 +241,10 @@ a{
             }
         }
     }
+
+    @media screen and (max-width: 767.98px){
+        margin: 30px auto;
+    }
 }
 
 
@@ -299,6 +303,10 @@ a{
 
         .slider__image{
             max-width: 100%;
+
+            img{
+                max-width: 100%;
+            }
         }
 
         .slider__content{
@@ -329,14 +337,16 @@ a{
             }
 
             &.slick-next{
+                right: 0;
                 background-image: url('../images/static/icons/arrow-right-white.svg');
             }
 
             &.slick-prev{
+                left: 0;
                 background-image: url('../images/static/icons/arrow-left-white.svg');
             }
 
-            @media screen and (min-width: 1400px){
+            @media screen and (min-width: 1200px){
                 &.slick-next{
                     right: -23px;
                 }
@@ -381,7 +391,7 @@ a{
         }
 
         .title--box{
-            margin-bottom: 40px;
+            margin: 20px 0;
             font-size: 1.125rem;
             line-height: 1.5rem;
 
@@ -395,6 +405,11 @@ a{
                 font-size: 1.125rem;
                 line-height: 1.5rem;
             }
+
+            @media screen and (min-width: 1200px){
+                margin: 0;
+                margin-bottom: 40px;
+            }
         }
 
         .content--box{
@@ -404,6 +419,7 @@ a{
 
             .icon__rate{
                 max-width: 100%;
+                margin: 20px 0;
             }
 
             .text__editor{
@@ -645,6 +661,7 @@ a{
     .article--rate{
         position: relative;
         height: 355px;
+        margin-bottom: 20px;
         border-radius: 8px;
         background-color: #F1F1F1;
 
@@ -732,6 +749,8 @@ a{
     }
 
     .article--news{
+        margin-bottom: 20px;
+
         .slider--news{
             .slider__item{
                 position: relative;
@@ -834,7 +853,7 @@ a{
     }
 
     .article--info{
-        margin-top: 20px;
+        margin-bottom: 20px;
 
         .card--holder{
             position: relative;
