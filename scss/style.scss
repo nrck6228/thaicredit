@@ -137,9 +137,9 @@ a{
         font-size: 26px;
         line-height: 26px;
         text-align: center;
-        left: 50px;
+        left: 15px;
         position: absolute;
-        bottom: 25px;
+        bottom: 15px;
         z-index: 99;
 
         padding: 5px 0;
@@ -164,7 +164,7 @@ a{
         outline: none;
         background: none;
         position: absolute;
-        bottom: 25px;
+        bottom: 17.5px;
         padding: 10px;
         color: #fff;
         text-transform: lowercase;
@@ -172,7 +172,7 @@ a{
     
         z-index: 101;
         &.slick-next {
-            left: 160px;
+            left: 125px;
 
             &:before{
                 content: url('../images/static/icons/arrow-right.svg');
@@ -180,7 +180,7 @@ a{
         }
     
         &.slick-prev {
-            left: 60px;
+            left: 25px;
 
             &:before{
                 content: url('../images/static/icons/arrow-left.svg');
@@ -188,7 +188,7 @@ a{
         }
 
         &.slick-disabled{
-            bottom: 31px;
+            bottom: 16px;
             &:before{
                 content: url('../images/static/icons/arrow-line.svg');
             }
