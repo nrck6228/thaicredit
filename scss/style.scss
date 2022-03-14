@@ -440,6 +440,8 @@ a{
 
             .text__editor{
                 position: relative;
+                font-size: 1.125rem;
+                line-height: 1.5rem;
 
                 ul{
                     list-style: none;
@@ -447,10 +449,17 @@ a{
                     margin: 0;
 
                     li{
+                        position: relative;
                         display: block;
+                        padding-left: 25px;
                         margin-bottom: 1rem;
+                        font-size: 1.125rem;
+                        line-height: 1.5rem;
 
                         &:before{
+                            position: absolute;
+                            top: 3px;
+                            left: 0;
                             content: url('../images/static/icons/list-blue.svg');
                         }
                     }
