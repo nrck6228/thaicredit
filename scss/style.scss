@@ -78,15 +78,21 @@ a{
     h3{
         font-size: 2.25rem;
         margin-bottom: 30px;
+        padding-bottom: 20px;
+        position: relative;
+        &:after{
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: $orange;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
     }
 
-    &:after{
-        content: '';
-        display: block;
-        width: 40px;
-        height: 2px;
-        background-color: $orange;
-    }
+    
     &__footer{
         margin-top: 39px;
     }
@@ -935,5 +941,8 @@ a{
     img{
         width: 35px;
         height: 35px;
+    }
+    @media only screen and (max-width: 1024px) {
+        display: none;
     }
 }
