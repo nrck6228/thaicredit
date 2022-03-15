@@ -10,7 +10,7 @@ $orange: #FF7301;
         &__main{
             margin-bottom: 30px;
             .desc--editor{
-                font-size: 1.125rem;
+                font-size: 1.25rem;
                 line-height: 1.625rem;
                 color: #969696;
                 margin-bottom: 30px;
@@ -31,7 +31,7 @@ $orange: #FF7301;
                         right: 0;
                         display: block;
                         text-transform: uppercase;
-                        font-size: 1.125rem;
+                        font-size: 1.25rem;
                         line-height: 1.625rem;
                         color: #013CA6;
                         background-color: #fff;
@@ -108,7 +108,7 @@ $orange: #FF7301;
                         margin-bottom: 10px;
                         a{
                             display: block;
-                            font-size: 1.125rem;
+                            font-size: 1.25rem;
                             line-height: 1.625rem;
                             color: #4C4C4C;
                             &:hover{
@@ -141,7 +141,7 @@ $orange: #FF7301;
                                     margin-right: 10px;
                                 }
                                 .text-contact{
-                                    font-size: 1.125rem;
+                                    font-size: 1.25rem;
                                     line-height: 1.625rem;
                                     color: #969696;
                                 }
@@ -167,7 +167,7 @@ $orange: #FF7301;
             background-color: #013CA6;
             font-size: 1.125rem;
             line-height: 1.625rem;
-            font-weight: 500;
+            font-weight: 300;
             color: #fff;
             text-align: center;
             padding: 15px 10px;
@@ -182,6 +182,16 @@ $orange: #FF7301;
         position: absolute;
         bottom: 30px;
         right: 30px;
+        animation: MoveUpDown 1.5s linear infinite;
         cursor: pointer;
+    }
+
+    @keyframes MoveUpDown {
+        0%, 100% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(10px);
+        }
     }
 }
