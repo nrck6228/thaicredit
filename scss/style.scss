@@ -38,7 +38,7 @@ a{
     min-width: 130px;
     max-width: max-content;
     height: 46px;
-    padding: 0 30px;
+    // padding: 0 30px;
     display: flex;
     font-size: 1.375rem;
     line-height: 25px;
@@ -549,6 +549,12 @@ a{
 
             &:hover{
                 background-color: white;
+            }
+        }
+
+        @media screen and (max-width: 1199.98px){
+            .content__box{
+                margin-bottom: 30px;
             }
         }
           
