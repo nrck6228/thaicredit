@@ -1,4 +1,174 @@
-.product--wrapper {
+.card .card-icon img {
+  max-width: 100%;
+}
+
+.calculator--wrapper {
   position: relative;
-  height: 400px;
+  padding: 40px 0;
+}
+.calculator--wrapper .content--box {
+  margin-bottom: 40px;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+}
+.calculator--wrapper .content--box .text__editor {
+  position: relative;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+}
+.calculator--wrapper .content--box .text__editor h3 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+}
+.calculator--wrapper .content--box .text__editor p {
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+}
+.calculator--wrapper .content--box .text__editor ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.calculator--wrapper .content--box .text__editor ul li {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  margin-bottom: 1rem;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+}
+.calculator--wrapper .content--box .text__editor ul li:before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  content: url("../images/static/icons/list-blue.svg");
+}
+.calculator--wrapper .block-range-slide {
+  margin-bottom: 2rem;
+}
+.calculator--wrapper .range .block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calculator--wrapper .range .block-text .text__title {
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  color: #4C4C4C;
+}
+.calculator--wrapper .range .block-text .text__num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calculator--wrapper .range .block-text .text__num .input__num .inp-style {
+  font-size: 2.625rem;
+  line-height: 2.375rem;
+  color: #013CA6;
+  border: none;
+  padding-right: 20px;
+  text-align: right;
+  max-width: 200px;
+}
+.calculator--wrapper .range .block-text .text__num .current {
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  color: #4C4C4C;
+}
+.calculator--wrapper .range .irs--flat {
+  height: 55px;
+}
+.calculator--wrapper .range .irs-single, .calculator--wrapper .range .irs-min, .calculator--wrapper .range .irs-max {
+  display: none;
+}
+.calculator--wrapper .range .irs-line {
+  height: 10px;
+}
+.calculator--wrapper .range .irs-bar {
+  height: 10px;
+  background-color: #005BFF;
+}
+.calculator--wrapper .range .irs-handle {
+  background-image: url("../images/static/icons/icon-range-slide.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  top: 16px;
+}
+.calculator--wrapper .range .irs-handle i {
+  display: none !important;
+}
+.calculator--wrapper .range .irs-grid .irs-grid-pol.small {
+  display: none;
+}
+.calculator--wrapper .range .irs-grid .irs-grid-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  bottom: -10px;
+}
+
+.download--wrapper {
+  position: relative;
+  padding: 40px 0;
+}
+.download--wrapper .card--download {
+  padding: 1rem;
+  background-color: #F1F1F1;
+  border-radius: 16px;
+  border: none;
+  margin-bottom: 2rem;
+}
+.download--wrapper .card--download .card__icon {
+  margin-bottom: 15px;
+}
+.download--wrapper .card--download .card__icon img {
+  width: 45px;
+  height: 38px;
+}
+.download--wrapper .card--download .card__body {
+  position: relative;
+}
+.download--wrapper .card--download .card__text {
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  color: #4C4C4C;
+}
+.download--wrapper .card--download .cad__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.download--wrapper .card--download .cad__link .item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  color: #969696;
+}
+.download--wrapper .card--download .cad__link .item a img {
+  margin-right: 10px;
 }
