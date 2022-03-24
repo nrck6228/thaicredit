@@ -295,6 +295,7 @@ a{
             margin-bottom: 0;
             font-weight: 500;
             font-size: 1.5rem;
+            line-height: 1.5rem;
             color: #969696;
             border: none;
             border-radius: 0;
@@ -752,6 +753,7 @@ a{
                 margin-bottom: 0;
                 font-weight: 500;
                 font-size: 1.5rem;
+            line-height: 1.5rem;
                 color: #969696;
                 border: none;
                 border-radius: 0;
@@ -789,12 +791,13 @@ a{
             &>:not(caption)>*>*{
                 font-weight: 300;
                 font-size: 1.375rem;
-                line-height: 30px;
+                line-height: 1.875rem;
                 color: #4C4C4C;
                 border-bottom-color: white;
             }
 
             th{
+                vertical-align: middle;
                 &:before{
                     content: '•';
                     color: #4C4C4C;
@@ -803,7 +806,8 @@ a{
 
             td{
                 font-weight: 500;
-                font-size: 30px;
+                font-size: 1.875rem;
+                line-height: 1.875rem;
                 color: $blue;
                 text-align: right;
             }
@@ -1071,6 +1075,12 @@ a{
                     margin-bottom: 20px;
                 }
 
+                .form-floating>label{
+                    font-size: 1.25rem;
+                    line-height: 1.25rem;
+                    color: #969696;
+                }
+
                 .table-responsive{
                     margin-bottom: 20px;
 
@@ -1094,6 +1104,7 @@ a{
                         border-bottom-width: 0;
                         box-shadow: none;
                     }
+
                     &>:not(:first-child) {
                         border-top: none;
                     }  
@@ -1102,10 +1113,11 @@ a{
                         tr{
                             th{
                                 font-weight: 500;
-                                font-size: 1.5rem;
-                                line-height: 2rem;
+                                font-size: 1.375rem;
+                                line-height: 1.375rem;
                                 color: #969696;
                                 text-align: center;
+                                vertical-align: middle;
                                 
                                 &:first-child{
                                     border-top-left-radius: 8px;
@@ -1132,8 +1144,8 @@ a{
                         tr{
                             td{
                                 font-weight: 500;
-                                font-size: 1.5rem;
-                                line-height: 2rem;
+                                font-size: 1.375rem;
+                                line-height: 1.875rem;
                                 color: #4C4C4C;
                                 text-align: center;
                                 background-color: white;
@@ -1174,6 +1186,7 @@ a{
                     margin-bottom: 0;
                     font-weight: 500;
                     font-size: 1.5rem;
+            line-height: 1.5rem;
                     color: #969696;
                     border: none;
                     border-radius: 0;

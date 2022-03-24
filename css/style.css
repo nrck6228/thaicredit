@@ -851,6 +851,7 @@ a {
       margin-bottom: 0;
       font-weight: 500;
       font-size: 1.5rem;
+      line-height: 1.5rem;
       color: #969696;
       border: none;
       border-radius: 0; }
@@ -1209,6 +1210,7 @@ a {
         margin-bottom: 0;
         font-weight: 500;
         font-size: 1.5rem;
+        line-height: 1.5rem;
         color: #969696;
         border: none;
         border-radius: 0;
@@ -1230,15 +1232,18 @@ a {
     .news--wrapper .article--rate .table--increase > :not(caption) > * > * {
       font-weight: 300;
       font-size: 1.375rem;
-      line-height: 30px;
+      line-height: 1.875rem;
       color: #4C4C4C;
       border-bottom-color: white; }
-    .news--wrapper .article--rate .table--increase th:before {
-      content: '•';
-      color: #4C4C4C; }
+    .news--wrapper .article--rate .table--increase th {
+      vertical-align: middle; }
+      .news--wrapper .article--rate .table--increase th:before {
+        content: '•';
+        color: #4C4C4C; }
     .news--wrapper .article--rate .table--increase td {
       font-weight: 500;
-      font-size: 30px;
+      font-size: 1.875rem;
+      line-height: 1.875rem;
       color: #013CA6;
       text-align: right; }
   .news--wrapper .article--news {
@@ -1431,6 +1436,10 @@ a {
         position: relative; }
         .page--wrapper .product--wrapper .product--detail .product--content h1, .page--wrapper .product--wrapper .product--detail .product--content h2, .page--wrapper .product--wrapper .product--detail .product--content h3, .page--wrapper .product--wrapper .product--detail .product--content h4, .page--wrapper .product--wrapper .product--detail .product--content h5, .page--wrapper .product--wrapper .product--detail .product--content h6 {
           margin-bottom: 20px; }
+        .page--wrapper .product--wrapper .product--detail .product--content .form-floating > label {
+          font-size: 1.25rem;
+          line-height: 1.25rem;
+          color: #969696; }
         .page--wrapper .product--wrapper .product--detail .product--content .table-responsive {
           margin-bottom: 20px; }
           .page--wrapper .product--wrapper .product--detail .product--content .table-responsive ul {
@@ -1450,10 +1459,11 @@ a {
           border-top: none; }
         .page--wrapper .product--wrapper .product--detail .product--content .table--product thead tr th {
           font-weight: 500;
-          font-size: 1.5rem;
-          line-height: 2rem;
+          font-size: 1.375rem;
+          line-height: 1.375rem;
           color: #969696;
-          text-align: center; }
+          text-align: center;
+          vertical-align: middle; }
           .page--wrapper .product--wrapper .product--detail .product--content .table--product thead tr th:first-child {
             border-top-left-radius: 8px; }
           .page--wrapper .product--wrapper .product--detail .product--content .table--product thead tr th:last-child {
@@ -1466,8 +1476,8 @@ a {
             background-color: #013CA6; }
         .page--wrapper .product--wrapper .product--detail .product--content .table--product tbody tr td {
           font-weight: 500;
-          font-size: 1.5rem;
-          line-height: 2rem;
+          font-size: 1.375rem;
+          line-height: 1.875rem;
           color: #4C4C4C;
           text-align: center;
           background-color: white; }
@@ -1493,6 +1503,7 @@ a {
           margin-bottom: 0;
           font-weight: 500;
           font-size: 1.5rem;
+          line-height: 1.5rem;
           color: #969696;
           border: none;
           border-radius: 0;
