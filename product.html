@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=”format-detection” content="telephone=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Slick Slide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+    <link rel="preload" href="css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/animate.css">
+    </noscript>
+
+    <link rel="preload" href="css/ion.rangeSlider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    </noscript>
+    
+
+    <title>ธนาคารไทยเครดิตเพื่อรายย่อย</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header--desktop d-none d-lg-block wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <div class="block-header block-header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header header__top">
+                                <div class="content-top content-top__left">
+                                    <div id="personal" class="customer-type show">ลูกค้าบุคคล</div>
+                                    <div id="business" class="customer-type">ลูกค้าธุรกิจ</div>
+                                </div>
+                                <div class="content-top content-top__right">
+                                    <div class="menu-top">
+                                        <ul class="list-menu">
+                                            <li>
+                                                <a href="" class="text-menu">เกี่ยวกับเรา</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="text-menu">ข่าวสาร</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="text-menu">โปรโมชั่น</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="text-menu">คำถามที่พบบ่อย</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="map">
+                                        <a href="">
+                                            <img src="images/static/icons/icon-map.svg" alt="icon map">
+                                        </a>
+                                    </div>
+                                    <div class="search-voice">
+                                        <a href="">
+                                            <img src="images/static/icons/icon-voice.svg" alt="icon search voice">
+                                        </a>
+                                    </div>
+                                    <div class="lang">
+                                        <ul>
+                                            <li class="list-lang active">
+                                                <a href="">TH</a>
+                                            </li>
+                                            <li class="list-lang">
+                                                <a href="">EN</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu_personal" class="block-header block-header__main show">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header header__main">
+                                <div class="logo">
+                                    <a href=""><img src="images/static/logo.svg" alt="Logo"></a>
+                                </div>
+                                <div class="main-menu">
+                                    <ul class="list-menu">
+                                        <li>
+                                            <a href="">สินเชื่อ</a>
+                                        </li>
+                                        <li>
+                                            <a href="">เงินฝาก</a>
+                                        </li>
+                                        <li>
+                                            <a href="">บริการอื่นๆ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu_bussiness" class="block-header block-header__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header header__main">
+                                <div class="logo">
+                                    <a href=""><img src="images/static/logo.svg" alt="Logo"></a>
+                                </div>
+                                <div class="main-menu">
+                                    <ul class="list-menu">
+                                        <li>
+                                            <a href="">สินเชื่อเพื่อธุรกิจ</a>
+                                        </li>
+                                        <li>
+                                            <a href="">การค้าระหว่างประเทศ</a>
+                                        </li>
+                                        <li>
+                                            <a href="">บริการอื่นๆ เพื่อธุรกิจ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header--mobile d-block d-lg-none wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <div class="header--container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header__content">
+                                <div class="header__left">
+                                    <div class="logo">
+                                        <a href=""><img src="images/static/logo.svg" alt="Logo"></a>
+                                    </div>
+                                </div>
+
+                                <div class="header__right">
+                                    <div class="menu--bars">
+                                        <a href="#" class="map__icon">
+                                            <img src="images/static/icons/icon-map.svg" alt="แผนที่">
+                                        </a>
+
+                                        <a href="#" class="voice__icon">
+                                            <img src="images/static/icons/icon-voice.svg" alt="ค้นหาด้วยเสียง">
+                                        </a>
+
+                                        <div class="hamburger" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                            <span class="line"></span>
+                                            <span class="line"></span>
+                                            <span class="line"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header--nav">
+                <nav class="navbar">
+                    <div class="collapse" id="collapseExample">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="menuPersonal"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ลูกค้าบุคคล</a>
+                                <ul class="dropdown-menu" aria-labelledby="menuPersonal">
+                                    <li>
+                                        <a href="#" class="dropdown-item" target="_self">
+                                            สินเชื่อ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item" target="_self">
+                                            เงินฝาก
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item" target="_self">
+                                            บริการอื่นๆ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="menuBusiness"
+                                    data-bs-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">ลูกค้าธุรกิจ</a>
+                                <ul class="dropdown-menu" aria-labelledby="menuBusiness">
+                                    <li>
+                                        <a href="#" class="dropdown-item" target="_self">
+                                            สินเชื่อเพื่อธุรกิจ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item" target="_self">
+                                            การค้าระหว่างประเทศ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item" target="_self">
+                                            บริการอื่นๆ เพื่อธุรกิจ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar--nav">
+                            <li>
+                                <a href="" class="text-menu">เกี่ยวกับเรา</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-menu">ข่าวสาร</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-menu">โปรโมชั่น</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-menu">คำถามที่พบบ่อย</a>
+                            </li>
+                        </ul>
+
+                        <div class="lang--box">
+                            <a href="#" title="TH" class="active">TH</a>
+                            <a href="#" title="EN">EN</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="page--wrapper">
+        <div class="breadcrumb--wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="dropdown--container">
+                            <div class="dropdown">
+                                <a class="btn btn--dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    สินเชื่อ SME กล้าให้
+                                </a>
+                              
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">สินเชื่อ SME</a></li>
+                                  <li><a class="dropdown-item" href="#">สินเชื่อบุคคล</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-12 col-lg-6">
+                        <div class="breadcrumb--container">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
+                                  <li class="breadcrumb-item"><a href="#">สินเชื่อ</a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">สินเชื่อ SME กล้าให้</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner--wrapper wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+            <figure class="banner--container">
+                <img src="images/static/main-slide/main-slide-2.jpg" alt="" class="banner__image">
+            </figure>
+        </div>
+
+        <div class="product--wrapper">
+            <div class="head--title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="h2 text-blue btOrange">
+                                สินเชื่อ SME กล้าให้
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product--detail text--editor mb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="product__name">
+                                สินเชื่อ SME กล้าให้เกิน 100 และ SME กล้าให้เต็ม MAX 
+                            </h2>
+                            <h3 class="product__title">
+                                สินเชื่อธุรกิจเพื่อผู้ประกอบการรายย่อยแบบมีหลักทรัพย์ค้ำประกัน ขยายธุรกิจเป็นเงินทุนหมุนเวียน หรือเสริมสภาพคล่อง ค้ำประกันโดย บสย. 
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="grid--content">
+                                <div class="grid__box">
+                                    <img class="icon__rate" src="images/static/product/icon-1.png"> 
+                                    <h3 class="product__title">
+                                        SME กล้าให้เต็ม MAX สูงสุด 35 ล้านบาท
+                                    </h3>
+                                </div>
+
+                                <div class="grid__box">
+                                    <img class="icon__rate" src="images/static/product/icon-2.png"> 
+                                    <h3 class="product__title">
+                                        SME กล้าให้เต็ม MAX สูงสุด 35 ล้านบาท
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-auto">
+                            <a href="#" class="contact--icon">
+                                <img class="icon__contact" src="images/static/icons/icon-line.svg"> 
+                                <span>
+                                    สอบถาม Add เลย
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product--detail mb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="rate-tab" data-bs-toggle="tab" data-bs-target="#nav-rate" type="button" role="tab" aria-controls="nav-rate" aria-selected="true">อัตราดอกเบี้ยเงินกู้</button>
+                                <button class="nav-link" id="document-tab" data-bs-toggle="tab" data-bs-target="#nav-document" type="button" role="tab" aria-controls="nav-document" aria-selected="false">เอกสารประกอบการสมัคร</button>
+                                <button class="nav-link" id="apply-tab" data-bs-toggle="tab" data-bs-target="#nav-apply" type="button" role="tab" aria-controls="nav-apply" aria-selected="false">สมัครสินเชื่อ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-rate" role="tabpanel" aria-labelledby="rate-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="product--content">
+                                        <h3>
+                                            อัตราดอกเบี้ย
+                                        </h3>
+        
+                                        <div class="table-responsive">
+                                            <table class="table table--product">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="bg__darkblue">
+                                                            อัตราดอกเบี้ยพิเศษ
+                                                        </th>
+                                                        <th class="bg__lightblue">
+                                                            อัตราดอกเบี้ย (ต่อปี)
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            3 เดือนแรกคงที่ 0% 
+                                                        </td>
+                                                        <td>
+                                                            MRR +4.70% ต่อปี (13.50% ปี)
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <div class="note">
+                                            <h4>หมายเหตุ</h4>
+        
+                                            <ul>
+                                                <li>
+                                                    รายละเอียดการพิจารณาสินเชื่อเป็นไปตามหลักเกณฑ์ และเงื่อนไขที่ธนาคารฯ กำหนด
+                                                </li>
+                                                <li>
+                                                    MRR อ้างอิงตามประกาศธนาคาร
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-document" role="tabpanel" aria-labelledby="document-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="product--content">
+                                        <h3>
+                                            เอกสารประกอบการพิจารณาสินเชื่อ SME กล้าให้เกิน 100 และ SME กล้าให้เต็ม MAX
+                                        </h3>
+        
+                                        <div class="table-responsive">
+                                            <table class="table table--product">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="bg__darkblue">
+                                                            กรณีบุคคลธรรมดา
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <ul>
+                                                                <li>
+                                                                    สำเนาบัตรประชาชนและสำเนาทะเบียนบ้านของผู้สมัคร คู่สมรสผู้สมัคร เจ้าของหลักประกัน
+                                                                </li>
+                                                                <li>
+                                                                    เอกสารแสดงรายได้ของกิจการ เช่น Statement ย้อนหลังไม่น้อยกว่า 6 เดือน หรือเอกสารแสดงรายได้อื่นๆ เช่น บิลการค้า เป็นต้น
+                                                                </li>
+                                                                <li>
+                                                                    ใบเปลี่ยนชื่อ/นามสกุลของผู้สมัคร คู่สมรสผู้สมัคร เจ้าของหลักประกัน (ถ้ามี)
+                                                                </li>
+                                                                <li>
+                                                                    สำเนาทะเบียนสมรส (ถ้ามี)
+                                                                </li>
+                                                                <li>
+                                                                    หนังสือรับรองการจดทะเบียนพาณิชย์ และ / หรือ เอกสารทางราชการอื่น ๆ
+                                                                </li>
+                                                                <li>
+                                                                    สำเนาเอกสารสิทธิหลักประกัน เช่น โฉนดที่ดินหรือสำเนาหนังสือกรรมสิทธิ์ห้องชุด
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+        
+                                        <div class="table-responsive">
+                                            <table class="table table--product">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="bg__lightblue">
+                                                            กรณีนิติบุคคล
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <ul>
+                                                                <li>
+                                                                    สำเนาบัตรประชาชนและสำเนาทะเบียนบ้านของผู้สมัคร คู่สมรสผู้สมัคร เจ้าของหลักประกัน
+                                                                </li>
+                                                                <li>
+                                                                    เอกสารแสดงรายได้ของกิจการ เช่น Statement ย้อนหลังไม่น้อยกว่า 6 เดือน หรือเอกสารแสดงรายได้อื่นๆ เช่น บิลการค้า เป็นต้น
+                                                                </li>
+                                                                <li>
+                                                                    ใบเปลี่ยนชื่อ/นามสกุลของผู้สมัคร คู่สมรสผู้สมัคร เจ้าของหลักประกัน (ถ้ามี)
+                                                                </li>
+                                                                <li>
+                                                                    สำเนาทะเบียนสมรส (ถ้ามี)
+                                                                </li>
+                                                                <li>
+                                                                    หนังสือรับรองการจดทะเบียนพาณิชย์ และ / หรือ เอกสารทางราชการอื่น ๆ
+                                                                </li>
+                                                                <li>
+                                                                    สำเนาเอกสารสิทธิหลักประกัน เช่น โฉนดที่ดินหรือสำเนาหนังสือกรรมสิทธิ์ห้องชุด
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-apply" role="tabpanel" aria-labelledby="apply-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="product--content">
+                                        <h3>สมัครสินเชื่อ SME กล้าให้</h3>
+                                        <h4>สินเชื่อธุรกิจเพื่อผู้ประกอบการรายย่อยแบบมีหลักทรัพย์ค้ำประกัน ขยายธุรกิจ เป็นเงินทุนหมุนเวียน หรือเสริมสภาพคล่อง ค้ำประกันโดย บสย. </h4>
+                                        <form class="form needs-validation form--full-width" novalidate>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingName" placeholder="name">
+                                                        <label for="floatingName">ชื่อ</label>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingLastname" placeholder="lastname">
+                                                        <label for="floatingLastname">นามสกุล</label>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+        
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                                                        <label for="floatingEmail">อีเมล</label>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingPhone" placeholder="phone">
+                                                        <label for="floatingPhone">โทรศัพท์</label>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+        
+                                            <div class="row">
+                                                <!-- <div class="col-md-12">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                          <option selected>เลือกสินเชื่อที่ต้องการ</option>
+                                                          <option value="1">สินเชื่อทองแลกเงิน</option>
+                                                          <option value="2">สินเชื่อนาโนและไมโครเครดิต</option>
+                                                          <option value="3">สินเชื่อบุคคล</option>
+                                                        </select>
+                                                        <label for="floatingSelect">สินเชื่อ</label>
+                                                    </div>
+                                                </div> -->
+        
+                                                
+                                                <div class="col-md-12">
+                                                    <button type="submit" class="btn btn-primary btn--primary">
+                                                        SEND
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="head--title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="h2 text-blue btOrange">
+                                คำนวณการผ่อนชำระสินเชื่อ
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculator--wrapper mb-5">
+                <div class="container">
+                    <div class="content--holder">
+                        <div class="row">
+                            <div class="col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <div class="content--box">
+                                    <div class="text__editor">
+                                        <h3>
+                                            วงเงินกู้
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                วงเงินกู้สูงสุดไม่เกิน 90% ของราคาประเมินหลักประกัน*
+                                            </li>
+                                        </ul>
+                                        <br><br><br>
+                                        <h3>
+                                            ค่าใช้จ่ายอื่นๆ
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                ค่าใช้จ่ายอื่นๆ เป็นไปตามประกาศของธนาคาร*
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                              <div class="range">
+                                <div class="block-range-slide">
+                                  <div class="block-text">
+                                    <div class="text__title">วงเงินที่ต้องการ</div>
+                                    <div class="text__num">
+                                        <div class="input__num">
+                                          <input class="inp-style js-value-limit" type="text" value="200000" placeholder="0" readonly>
+                                        </div>
+                                        <span class="current">บาท</span>
+                                    </div>
+                                  </div>
+                                  <div class="style-input rang-slide">
+                                      <input class="inp-style text-center irs" type="text">
+                                  </div>
+                                </div>
+                                <div class="block-range-slide">
+                                  <div class="block-text">
+                                    <div class="text__title">ระยะเวลาการผ่อนชำระ</div>
+                                    <div class="text__num">
+                                        <div class="input__num">
+                                          <input class="inp-style" type="text" value="30" placeholder="0" readonly>
+                                        </div>
+                                        <span class="current">ปี</span>
+                                    </div>
+                                  </div>
+                                  <div class="style-input rang-slide">
+                                      <input class="inp-style text-center irs2" type="text">
+                                  </div>
+                                  <div class="block-text">
+                                    <div class="text__title">ชำระต่อเดือน</div>
+                                    <div class="text__num">
+                                        <div class="input__num">
+                                          <input class="inp-style js-value-limit2" type="text" value="5000" placeholder="0" readonly>
+                                        </div>
+                                        <span class="current">บาท</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mb-5">
+                                <a href="#" class="contact--icon">
+                                    <img class="icon__contact" src="images/static/icons/icon-line.svg"> 
+                                    <span>
+                                        สอบถาม Add เลย
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                              <div class="content--box">
+                                <div class="text__editor">
+                                  <p>
+                                    หมายเหตุ<br>
+                                    • รายละเอียดการพิจารณาสินเชื่อเป็นไปตามหลักเกณฑ์ และเงื่อนไขที่ธนาคารฯ กำหนด
+                                  </p>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="head--title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="h2 text-blue btOrange">
+                                เอกสารแนบ
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="download--wrapper mb-5">
+                <div class="container">
+                    <div class="content--holder">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="card card--download wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                    <div class="card__icon">
+                                        <img src="images/static/icons/icon-download.svg" alt="icon download">
+                                    </div>
+                                    <div class="card__body">
+                                        <p class="card__text">
+                                            ข้อมูลผลิตภัณฑ์สินเชื่อเพื่อธุรกิจ Micro SME 
+                                            ธนาคารไทยเครดิตฯ (Product catalog)
+                                        </p>
+                                    </div>
+                                    <div class="cad__link">
+                                        <div class="item">
+                                            <a href=""><img src="images/static/icons/icon-link-online.svg" alt="icon"> ดูออนไลน์</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="images/static/icons/icon-link-download.svg" alt="icon"> ดาวน์โหลด</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card card--download wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <div class="card__icon">
+                                    <img src="images/static/icons/icon-download.svg" alt="icon download">
+                                    </div>
+                                    <div class="card__body">
+                                    <p class="card__text">
+                                        ข้อมูลผลิตภัณฑ์สินเชื่อเพื่อธุรกิจ Micro SME 
+                                        ธนาคารไทยเครดิตฯ (Product catalog)
+                                    </p>
+                                    </div>
+                                    <div class="cad__link">
+                                        <div class="item">
+                                            <a href=""><img src="images/static/icons/icon-link-online.svg" alt="icon"> ดูออนไลน์</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="images/static/icons/icon-link-download.svg" alt="icon"> ดาวน์โหลด</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card card--download wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                                    <div class="card__icon">
+                                    <img src="images/static/icons/icon-download.svg" alt="icon download">
+                                    </div>
+                                    <div class="card__body">
+                                    <p class="card__text">
+                                        ข้อมูลผลิตภัณฑ์สินเชื่อเพื่อธุรกิจ Micro SME 
+                                        ธนาคารไทยเครดิตฯ (Product catalog)
+                                    </p>
+                                    </div>
+                                    <div class="cad__link">
+                                        <div class="item">
+                                            <a href=""><img src="images/static/icons/icon-link-online.svg" alt="icon"> ดูออนไลน์</a>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="images/static/icons/icon-link-download.svg" alt="icon"> ดาวน์โหลด</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="block-footer block-footer__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <div class="head--title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <h3 class="h2 text-blue btOrange">
+                                    ธนาคารไทยเครดิต เพื่อรายย่อย จำกัด (มหาชน)
+                                </h3>
+                            </div>
+                            <div class="desc--editor wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                123 ชั้น 1 อาคารไทยประกันชีวิต ถ.รัชดาภิเษก แขวงดินแดง
+                                เขตดินแดง กทม. 10400
+                                <br /><br />
+                                เปิดทำการทุกวัน เวลา 08.00-22.00 น.
+                            </div>
+                            <div class="link-widget-footer wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="article--info">
+                                            <a href="#" class="card--holder">
+                                                <div class="card__image"
+                                                    style="background-image: url('images/static/footer/img-widget1.png');">
+                                                </div>
+                                                <div class="button--control">
+                                                    <button class="btn btn-primary btn--outline">career</button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="article--info">
+                                            <a href="#" class="card--holder">
+                                                <div class="card__image"
+                                                    style="background-image: url('images/static/footer/img-widget2.png');">
+                                                </div>
+                                                <div class="button--control">
+                                                    <button class="btn btn-primary btn--outline">FAQ</button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8  col-lg-6">
+                            <div class="head--title head--title__footer wow fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="0.75s">
+                                <h3 class="h2 text-blue btOrange">
+                                    หัวข้อที่น่าสนใจ
+                                </h3>
+                            </div>
+                            <div class="link-footer wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                                <ul>
+                                    <li>
+                                        <a href="">บัญชีเงินฝากออมทรัพย์</a>
+                                    </li>
+                                    <li>
+                                        <a href="">บัญชีเงินฝากออมทรัพย์เพิ่มค่า Plus Account One</a>
+                                    </li>
+                                    <li>
+                                        <a href="">บัญชีเงินฝากประจำ ประเภทสมุดคู่เงินฝาก</a>
+                                    </li>
+                                    <li>
+                                        <a href="">บัญชีเงินฝากปลอดภาษี Tax Free Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="">สิทธิขั้นพื้นฐานของผู้บริโภค</a>
+                                    </li>
+                                    <li>
+                                        <a href="">สินเชื่อนาโนและไมโครเครดิต เพื่อธุรกิจรายย่อย</a>
+                                    </li>
+                                    <li>
+                                        <a href="">สินเชื่อทองแลกเงิน</a>
+                                    </li>
+                                    <li>
+                                        <a href="">สินเชื่อส่วนบุคคล</a>
+                                    </li>
+                                    <li>
+                                        <a href="">สินเชื่อบ้านแลกเงิน</a>
+                                    </li>
+                                    <li>
+                                        <a href="">สินเชื่อรีไฟแนนซ์บ้าน</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2">
+                            <div class="head--title head--title__footer wow fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="1s">
+                                <h3 class="h2 text-blue btOrange">
+                                    ติดต่อเรา
+                                </h3>
+                            </div>
+                            <div class="link-icon-footer wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <div class="icon-link-contact">
+                                                <div class="icon-contact">
+                                                    <img src="images/static/icons/icon-map-footer.svg">
+                                                </div>
+                                                <div class="text-contact">Location Map</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="icon-link-contact">
+                                                <div class="icon-contact">
+                                                    <img src="images/static/icons/icon-phone.svg">
+                                                </div>
+                                                <div class="text-contact">ศูนย์ลูกค้าสัมพันธ์ <br />02-385-3038-54</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="icon-link-contact">
+                                                <div class="icon-contact">
+                                                    <img src="images/static/icons/icon-fb.svg">
+                                                </div>
+                                                <div class="text-contact">Facebook</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <div class="icon-link-contact">
+                                                <div class="icon-contact">
+                                                    <img src="images/static/icons/icon-yt.svg">
+                                                </div>
+                                                <div class="text-contact">Youtube</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-footer block-footer__copyright">
+                สงวนลิขสิทธิ์ พ.ศ.2561 โดย ธนาคารไทยเครดิต เพื่อรายย่อย จำกัด (มหาชน)
+            </div>
+
+            <div class="gototop">
+                <img src="images/static/icons/icon-gototop.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Insert 3rd party -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/wow.js"></script>
+
+    <!-- dragdrop -->
+    <script src="js/jquery.dad.min.js"></script>
+
+    <script src="js/ion.rangeSlider.min.js"></script>
+
+    <script>
+        // scroll animated logo
+        $(window).on("scroll", function (t) {
+            $(this).scrollTop() > 50 ? $(".header--desktop").addClass("header--desktop__animate") : $(".header--desktop").removeClass("header--desktop__animate");
+
+            // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            //   $(this).scrollTop() > 50 ? $(".header--mobile").addClass("header--mobile__open") : $(".header--mobile").removeClass("header--mobile__open");
+            // }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("is-active");
+                // $(".header--mobile").toggleClass("header--mobile__open");
+                $(".header--nav").toggleClass("header--nav__open");
+
+                $("body").toggleClass('open-menu');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.customer-type').click(function () {
+                $('.customer-type').removeClass('show');
+                $(this).addClass('show');
+
+                var type_menu = $('.customer-type.show').attr('id');
+                //console.log(type_menu);
+
+                if (type_menu === 'business') {
+                    $('#menu_personal').removeClass('show');
+                    $('#menu_bussiness').addClass('show');
+                } else {
+                    $('#menu_bussiness').removeClass('show');
+                    $('#menu_personal').addClass('show');
+                }
+            });
+
+            $(".gototop").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 1000);
+            });
+
+            // Dragdrop
+            $(".block-drag").dad({
+                draggable: ".item-draggable",
+                placeholderTemplate: "<div style=\"border: 3px solid red\"><h4>I'm a placeholder</h4></div>"
+            });
+        });
+    </script>
+
+    <script>
+        var helpers = {
+            addZeros: function (n) {
+                return (n < 10) ? '0' + n : '' + n;
+            }
+        };
+
+        function sliderInit() {
+            var $slider = $('.slider--holder');
+            $slider.each(function () {
+                var $sliderParent = $(this).parent();
+                $(this).slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    speed: 1500,
+                    // fade: true,
+                    // cssEase: 'ease',
+                    // touchThreshold: 100,
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                adaptiveHeight: true
+                            }
+                        }
+                    ]
+                });
+
+                if ($(this).find('.item').length > 1) {
+                    $(this).siblings('.slider--numbers').show();
+                }
+
+                $(this).on('afterChange', function (event, slick, currentSlide) {
+                    $sliderParent.find('.slider--numbers .active').html(helpers.addZeros(currentSlide + 1));
+                });
+
+                var sliderItemsNum = $(this).find('.slick-slide').not('.slick-cloned').length;
+                $sliderParent.find('.slider--numbers .total').html(helpers.addZeros(sliderItemsNum));
+
+            });
+        };
+
+        sliderInit();
+
+        //News Slider
+        $('.slider--news').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1500,
+            arrows: false,
+        });
+    </script>
+
+    <script>
+        $(".slider--loan").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            infinite: true,
+            autoplay: false,
+            speed: 1500,
+        });
+
+        $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+            e.target
+            e.relatedTarget
+            $('.slider--loan').slick('setPosition', 0);
+        });
+    </script>
+
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
+                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
+    </script>
+
+    <script>
+        const openModal1 = (isOpen) => {
+            const elModal1 = document.querySelector('.tooltip-one')
+            if (isOpen) elModal1.classList.add('open')
+            else elModal1.classList.remove('open')
+
+        }
+
+        const openModal2 = (isOpen) => {
+            const elModal2 = document.querySelector('.tooltip-two')
+            if (isOpen) elModal2.classList.add('open')
+            else elModal2.classList.remove('open')
+
+        }
+
+        const openModal3 = (isOpen) => {
+            const elModal3 = document.querySelector('.tooltip-three')
+            if (isOpen) elModal3.classList.add('open')
+            else elModal3.classList.remove('open')
+
+        }
+
+        const openModal4 = (isOpen) => {
+            const elModal4 = document.querySelector('.tooltip-four')
+            if (isOpen) elModal4.classList.add('open')
+            else elModal4.classList.remove('open')
+
+        }
+    </script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+            });
+        }, false);
+        })();
+    </script>
+
+<script>
+    $(document).ready(function () {
+
+        var $range = $(".irs"),
+            $from = $(".js-value-limit"),
+            range,
+            min = 30000,
+            max = 200000,
+            from;
+
+        var updateValues = function () {
+            $from.prop("value", from);
+        };
+        $range.ionRangeSlider({
+            min: min,
+            max: max,
+            grid: false,
+            step: 1000,
+            from: 200000,//ถ้าไม่fix ให้เอาออก
+            keyboard: false,
+            onChange: function (data) {
+                from = data.from;
+                updateValues();
+            },
+            onFinish: function (data) {
+                from = data.from;     
+                updateValues();
+            },
+            prettify: function (num) {
+                var n = num.toString();
+                n = n.replace(".", ",");
+                return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1\,");
+            }
+        });
+
+        range = $range.data("ionRangeSlider");
+
+        var updateRange = function () {
+            range.update({
+                from: from,
+            });
+        };
+        $from.on("change", function () {
+            from = +$(this).prop("value");
+            if (from < min) {
+                from = min;
+            }
+            updateValues();    
+            updateRange();
+        });            
+    });
+</script>
+<script>
+  $(document).ready(function () {
+
+      var $range = $(".irs2"),
+          $from = $(".js-value-limit2"),
+          range,
+          min = 30000,
+          max = 200000,
+          from;
+
+      var updateValues = function () {
+          $from.prop("value", from);
+      };
+      $range.ionRangeSlider({
+          min: min,
+          max: max,
+          grid: false,
+          step: 1000,
+          from: 200000,//ถ้าไม่fix ให้เอาออก
+          keyboard: false,
+          onChange: function (data) {
+              from = data.from;
+              updateValues();
+          },
+          onFinish: function (data) {
+              from = data.from;     
+              updateValues();
+          },
+          prettify: function (num) {
+              var n = num.toString();
+              n = n.replace(".", ",");
+              return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1\,");
+          }
+      });
+
+      range = $range.data("ionRangeSlider");
+
+      var updateRange = function () {
+          range.update({
+              from: from,
+          });
+      };
+      $from.on("change", function () {
+          from = +$(this).prop("value");
+          if (from < min) {
+              from = min;
+          }
+          updateValues();    
+          updateRange();
+      });            
+  });
+</script>
+</body>
+
+</html>
