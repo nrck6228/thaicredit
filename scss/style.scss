@@ -1259,6 +1259,183 @@ a{
                 }
             }
         }
+
+        .card{
+            .card-icon{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+        
+        .calculator--wrapper{
+            position: relative;
+            overflow: hidden;
+
+            .content--box{
+                font-size: 1.375rem;
+                line-height: 1.5rem;
+
+                .text__editor{
+                    position: relative;
+                    font-size: 1.375rem;
+                    line-height: 1.5rem;
+
+                    h3{
+                        font-size: 2.25rem;
+                        line-height: 2.5rem;
+                        margin-bottom: 30px;
+                    }
+        
+                    p{
+                        font-size: 1.375rem;
+                        line-height: 1.5rem;
+                    }
+                    
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+        
+                        li{
+                            position: relative;
+                            display: block;
+                            padding-left: 25px;
+                            margin-bottom: 1rem;
+                            font-size: 1.375rem;
+                            line-height: 1.5rem;
+        
+                            &:before{
+                                position: absolute;
+                                top: 3px;
+                                left: 0;
+                                content: url('../images/static/icons/list-blue.svg');
+                            }
+                        }
+                    }
+                }
+            }
+            .block-range-slide{
+                margin-bottom: 2rem;
+            }
+            .range{
+                .block-text{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .text__title{
+                        font-size: 1.375rem;
+                        line-height: 1.5rem;
+                        color: #4C4C4C;
+                    }
+                    .text__num{
+                        display: flex;
+                        align-items: center;
+                        .input__num{
+                            .inp-style{
+                                font-size: 2.625rem;
+                                line-height: 2.375rem;
+                                color: #013CA6;
+                                border: none;
+                                padding-right: 20px;
+                                text-align: right;
+                                max-width: 200px;
+                            }
+                        }
+                        .current{
+                            font-size: 1.375rem;
+                            line-height: 1.5rem;
+                            color: #4C4C4C;
+                        }
+                    }
+                }
+                .irs--flat{
+                    height: 55px;
+                }
+                .irs-single, .irs-min, .irs-max{
+                    display: none;
+                }
+                .irs-line{
+                    height: 10px;
+                }
+                .irs-bar{
+                    height: 10px;
+                    background-color: #005BFF;
+                }
+                .irs-handle{
+                    background-image: url('../images/static/icons/icon-range-slide.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 26px;
+                    height: 26px;
+                    top: 16px;
+                    i{
+                        display: none !important;
+                    }
+                }
+                .irs-grid{
+                    .irs-grid-pol{
+                        &.small{
+                            display: none;
+                        }
+                    }
+                    .irs-grid-text{
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #fff;
+                        bottom: -10px;
+                    }
+                }
+            }
+        }
+        
+        .download--wrapper{
+            position: relative;
+            overflow: hidden;
+
+            .card{
+                &--download{
+                    padding: 1rem;
+                    background-color: #F1F1F1;
+                    border-radius: 16px;
+                    border: none;
+                    margin-bottom: 2rem;
+                    .card__icon{
+                        margin-bottom: 15px;
+                        img{
+                            width: 45px;
+                            height: 38px;
+                        }
+                    }
+                    .card__body{
+                        position: relative;
+                    }
+                    .card__text{
+                        font-size: 1.375rem;
+                        line-height: 1.5rem;
+                        color: #4C4C4C;
+                    }
+                    .cad__link{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        .item{
+                            a{
+                                display: flex;
+                                align-items: center;
+                                font-size: 1.375rem;
+                                line-height: 1.5rem;
+                                color: #969696;
+                                img{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }        
     }
 }
 
